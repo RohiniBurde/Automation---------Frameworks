@@ -1,0 +1,15 @@
+<suite name=" UAT Automation suite">
+<listeners>
+    <listener class-name="com.uat.listener.TestsListenerAdapter" />
+</listeners>
+  <suite-files>
+   
+   <suite-file path="./TM_Project Suite.xml" />
+   
+   <suite-file path="./TM_TestPass Suite.xml" />
+   
+    <suite-file path="./TM_TestCases Suite.xml" />
+  
+   </suite-files>
+   
+</suite>

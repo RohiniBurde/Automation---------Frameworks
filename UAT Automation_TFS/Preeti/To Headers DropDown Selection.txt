@@ -1,0 +1,79 @@
+public void callCreateNewProjectFunction(String GroupName, String PortfolioName, String ProjectName, String Version, String EndMonth, String EndYear, String EndDate, String versionLead) throws IOException, InterruptedException
+	{
+			//redirect to project page for group creation
+			getElement("TM_projectsTab_Id").click();
+			
+			//create project function calling
+			createProject(GroupName, PortfolioName, ProjectName, Version, EndMonth, EndYear, EndDate, versionLead);
+			
+			getElement("TM_attachmentTab_Id").click();
+	}
+
+
+
+//code for verifying headers dropdown titles
+public int verifyHeaders(String dropdownID, String dropdownAllElements, String xPath1, String inputValue) throws IOException, InterruptedException
+	{
+		int flag=0;
+		//click on group dropdown
+		getElement(dropdownID).click();
+		Thread.sleep(500);
+		List<WebElement> listOfGrpElements = getObject(dropdownAllElements).findElements(By.tagName("li"));
+		System.out.println(listOfGrpElements.size());
+		
+		for(int i =1; i<=listOfGrpElements.size();i++)
+		{
+			WebElement grpNameXpath = getObject(xPath1, "Attachments_xPath2_end", i);
+			String grpElementTitle = grpNameXpath.getAttribute("title");
+			
+			if(grpElementTitle.equalsIgnoreCase(inputValue))
+			{
+				flag++;
+				grpNameXpath.click();
+				break;
+			}
+		}
+		return flag;
+	
+	}
+
+
+//verifying group name
+int groupResult = verifyHeaders("Attachments_groupDropDown_Id", "Attachments_groupNameDDElemnts", "Attachment_groupNameDDXpath1", GroupName);
+ if(groupResult==0){
+callCreateNewProjectFunction(GroupName, PortfolioName, ProjectName, Version, EndMonth, EndYear, EndDate, versionLead.get(0).username );
+	                            
+verifyHeaders("Attachments_groupDropDown_Id", "Attachments_groupNameDDElemnts", "Attachment_groupNameDDXpath1", GroupName);
+}
+
+//verify portfolio
+int portfolioResult = verifyHeaders("Attachments_portfolioDropDown_Id", "Attachments_portfolioNameDDElemnts", "Attachment_portfolioNameDDXpath1", PortfolioName);
+if(portfolioResult==0){
+callCreateNewProjectFunction(GroupName, PortfolioName, ProjectName, Version, EndMonth, EndYear, EndDate, versionLead.get(0).username );
+	                            
+}
+                            
+//verify project
+int projectResult = verifyHeaders("Attachments_projectDropDown_Id", "Attachments_projectNameDDElemnts", "Attachment_projectNameDDXpath1", ProjectName);
+if(projectResult==0){
+ callCreateNewProjectFunction(GroupName, PortfolioName, ProjectName, Version, EndMonth, EndYear, EndDate, versionLead.get(0).username );
+	                           
+ }
+                            
+//verify version
+ int versionResult = verifyHeaders("Attachments_versionDropDown_Id", "Attachments_versionDDElemnts", "Attachment_versionDDXpath1", Version);
+if(versionResult==0){
+callCreateNewProjectFunction(GroupName, PortfolioName, ProjectName, Version, EndMonth, EndYear, EndDate, versionLead.get(0).username );
+	                           
+}
+                			
+ //verify test pass
+int testPassResult = verifyHeaders("Attachments_testPassDropDown_Id", "Attachments_testpassNameDDElemnts", "Attachment_testpassNameDDXpath1", TestPassName );
+if((testPassResult==0))
+ {
+createTestPass(GroupName, PortfolioName, ProjectName, Version, TestPassName, EndMonth, EndYear, EndDate, testManager.get(0).username);
+createTester(GroupName, PortfolioName, ProjectName, Version, TestPassName, tester.get(0).username, TesterRole, TesterRole);	
+createTestCase(GroupName, PortfolioName, ProjectName, Version, TestPassName, TestCase);
+createTestStep(GroupName, PortfolioName, ProjectName, Version, TestPassName, TestStep, TestStepExpectedResult, TestCase, TesterRole);
+ getElement("TM_attachmentTab_Id").click();
+}

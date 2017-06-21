@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Detailed Analysis Suite">
+
+
+<test name="VerifyDataFlowFromTMPage">
+    <classes>
+        <class name="com.uat.suite.dashboard_detailedAnalysis.VerifyDataFlowFromTMPage" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyAllDropDowns">
+    <classes>
+        <class name="com.uat.suite.dashboard_detailedAnalysis.VerifyAllDropDowns" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyGaugeAndBarChartAnalysis">
+    <classes>
+        <class name="com.uat.suite.dashboard_detailedAnalysis.VerifyGaugeAndBarChartAnalysis" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyDescriptionTableArea">
+    <classes>
+        <class name="com.uat.suite.dashboard_detailedAnalysis.VerifyDescriptionTableArea" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyPagination">
+    <classes>
+        <class name="com.uat.suite.dashboard_detailedAnalysis.VerifyPagination" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyTooltipTexts">
+    <classes>
+        <class name="com.uat.suite.dashboard_detailedAnalysis.VerifyTooltipTexts" ></class>  
+    </classes>
+</test>
+
+</suite>

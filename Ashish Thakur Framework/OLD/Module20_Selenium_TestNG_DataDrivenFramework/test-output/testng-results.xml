@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="4" failed="1" total="7" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Quikr Suite" duration-ms="20938" started-at="2011-07-01T15:42:01Z" finished-at="2011-07-01T15:42:22Z">
+    <groups>
+    </groups>
+    <test name="Password Change Test" duration-ms="0" started-at="2011-07-01T15:42:22Z" finished-at="2011-07-01T15:42:22Z">
+      <class name="tests.LoginTest">
+        <test-method status="PASS" signature="initialize()" name="initialize" is-config="true" duration-ms="7875" started-at="2011-07-01T15:41:54Z" finished-at="2011-07-01T15:42:01Z">
+        </test-method>
+      </class>
+      <class name="tests.PasswordChangeTest">
+        <test-method status="SKIP" signature="testPasswordChange()" name="testPasswordChange" duration-ms="0" started-at="2011-07-01T15:42:22Z" finished-at="2011-07-01T15:42:22Z">
+        </test-method>
+        <test-method status="SKIP" signature="isSkipped()" name="isSkipped" is-config="true" duration-ms="0" started-at="2011-07-01T15:42:22Z" finished-at="2011-07-01T15:42:22Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode set to No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode set to No
+	at tests.PasswordChangeTest.isSkipped(PasswordChangeTest.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:525)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:130)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:624)
+	at org.testng.TestRunner.run(TestRunner.java:592)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+    <test name="Login Test" duration-ms="20907" started-at="2011-07-01T15:42:01Z" finished-at="2011-07-01T15:42:22Z">
+      <class name="tests.LoginTest">
+        <test-method status="FAIL" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)" name="testLogin" duration-ms="13375" started-at="2011-07-01T15:42:01Z" finished-at="2011-07-01T15:42:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[regSel2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password12341]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[not able to login with valid credentials]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: not able to login with valid credentials
+	at tests.LoginTest.testLogin(LoginTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="isSkipped()" name="isSkipped" is-config="true" duration-ms="0" started-at="2011-07-01T15:42:01Z" finished-at="2011-07-01T15:42:01Z">
+        </test-method>
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)" name="testLogin" duration-ms="7532" started-at="2011-07-01T15:42:15Z" finished-at="2011-07-01T15:42:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yavjhjb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kjkjlj]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+    <test name="Post Add Test" duration-ms="0" started-at="2011-07-01T15:42:22Z" finished-at="2011-07-01T15:42:22Z">
+      <class name="tests.PostAddTest">
+        <test-method status="SKIP" signature="testPostAdd()" name="testPostAdd" duration-ms="0" started-at="2011-07-01T15:42:22Z" finished-at="2011-07-01T15:42:22Z">
+        </test-method>
+        <test-method status="SKIP" signature="isSkipped()" name="isSkipped" is-config="true" duration-ms="0" started-at="2011-07-01T15:42:22Z" finished-at="2011-07-01T15:42:22Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode set to No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode set to No
+	at tests.PostAddTest.isSkipped(PostAddTest.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:525)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:130)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:624)
+	at org.testng.TestRunner.run(TestRunner.java:592)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+    <test name="Registration Test" duration-ms="15" started-at="2011-07-01T15:42:01Z" finished-at="2011-07-01T15:42:01Z">
+      <class name="tests.RegisterTest">
+        <test-method status="SKIP" signature="isSkipped()" name="isSkipped" is-config="true" duration-ms="0" started-at="2011-07-01T15:42:01Z" finished-at="2011-07-01T15:42:01Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode set to No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode set to No
+	at tests.RegisterTest.isSkipped(RegisterTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:525)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:130)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:624)
+	at org.testng.TestRunner.run(TestRunner.java:592)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="SKIP" signature="testRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" name="testRegistration" duration-ms="0" started-at="2011-07-01T15:42:01Z" finished-at="2011-07-01T15:42:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ashish]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[regSel1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[regtestsel2@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="SKIP" signature="testRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" name="testRegistration" duration-ms="0" started-at="2011-07-01T15:42:01Z" finished-at="2011-07-01T15:42:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ashish]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[regSel2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[regtestsel2@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+    <test name="Test Base" duration-ms="0" started-at="2011-07-01T15:42:01Z" finished-at="2011-07-01T15:42:01Z">
+    </test>
+  </suite>
+</testng-results>

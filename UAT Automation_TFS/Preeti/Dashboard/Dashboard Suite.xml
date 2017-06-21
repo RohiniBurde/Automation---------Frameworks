@@ -1,0 +1,80 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Dashboard Suite">
+<listeners>
+     
+</listeners>
+
+<test name="VerifyLandingOnDashboardPage">
+    <classes>
+        <class name="com.uat.suite.dashboard.VerifyLandingOnDashboardPage" ></class>  
+    </classes>
+</test>
+
+
+ <test name="VerifyTestingStatusArea">
+    <classes>
+        <class name="com.uat.suite.dashboard.VerifyTestingStatusArea" ></class>  
+    </classes>
+</test>
+
+
+  <test name="VerifyDashboardPageContent">
+    <classes>
+        <class name="com.uat.suite.dashboard.VerifyDashboardPageContent" ></class>  
+    </classes>
+</test>
+
+
+
+  <test name="VerifyTriageLink_ExceptTester">
+    <classes>
+        <class name="com.uat.suite.dashboard.VerifyTriageLink_ExceptTester" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyProjAndTPSummaryArea">
+    <classes>
+        <class name="com.uat.suite.dashboard.VerifyProjAndTPSummaryArea" ></class>  
+    </classes>
+</test> 
+
+
+
+<test name="VerifyMyActivity_Tester">
+    <classes>
+        <class name="com.uat.suite.dashboard.VerifyMyActivity_Tester" ></class>  
+    </classes>
+</test>
+
+
+
+<test name="VerifyDownloadTemplate">
+    <classes>
+        <class name="com.uat.suite.dashboard.VerifyDownloadTemplate" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyUploadTemplate">
+    <classes>
+        <class name="com.uat.suite.dashboard.VerifyUploadTemplate" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyHoverMessage">
+    <classes>
+        <class name="com.uat.suite.dashboard.VerifyHoverMessage" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyNoOfPrjPerPage">
+    <classes>
+        <class name="com.uat.suite.dashboard.VerifyNoOfPrjPerPage" ></class>  
+    </classes>
+</test>
+
+
+</suite>

@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Triage Suite">
+
+ 
+<test name="VerifyLandingOnTriagePage">
+    <classes>
+        <class name="com.uat.suite.triage.VerifyLandingOnTriagePage" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyContentsOfTriagePage">
+    <classes>
+        <class name="com.uat.suite.triage.VerifyContentsOfTriagePage" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyGoButtonFunctionality">
+    <classes>
+        <class name="com.uat.suite.triage.VerifyGoButtonFunctionality" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyExportButtonFunctionality">
+    <classes>
+        <class name="com.uat.suite.triage.VerifyExportButtonFunctionality" ></class>  
+    </classes>
+</test>
+
+<test name="VerifySPTriageFunctionality">
+    <classes>
+        <class name="com.uat.suite.triage.VerifySPTriageFunctionality" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyTriageTooltipText">
+    <classes>
+        <class name="com.uat.suite.triage.VerifyTriageTooltipText" ></class>  
+    </classes>
+</test>
+
+</suite>

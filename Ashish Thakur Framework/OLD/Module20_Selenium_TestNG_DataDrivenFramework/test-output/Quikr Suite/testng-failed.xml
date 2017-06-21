@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Quikr Suite]">
+  <listeners>
+    <listener class-name="listener.TestsListenerAdapter"/>
+  </listeners>
+  <test name="Password Change Test(failed)" preserve-order="false">
+    <classes>
+      <class name="tests.PostAddTest">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class>
+      <class name="tests.RegisterTest">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="initialize"/>
+        </methods>
+      </class>
+      <class name="tests.PasswordChangeTest">
+        <methods>
+          <include name="testPasswordChange"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Login Test(failed)" preserve-order="false">
+    <classes>
+      <class name="tests.PostAddTest">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class>
+      <class name="tests.RegisterTest">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="testLogin" invocation-numbers="0"/>
+          <include name="isSkipped"/>
+          <include name="initialize"/>
+        </methods>
+      </class>
+      <class name="tests.PasswordChangeTest">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Post Add Test(failed)" preserve-order="false">
+    <classes>
+      <class name="tests.PostAddTest">
+        <methods>
+          <include name="testPostAdd"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class>
+      <class name="tests.RegisterTest">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="initialize"/>
+        </methods>
+      </class>
+      <class name="tests.PasswordChangeTest">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Registration Test(failed)" preserve-order="false">
+    <classes>
+      <class name="tests.PostAddTest">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class>
+      <class name="tests.RegisterTest">
+        <methods>
+          <include name="testRegistration"/>
+          <include name="isSkipped"/>
+        </methods>
+      </class>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="isSkipped"/>
+          <include name="initialize"/>
+        </methods>
+      </class>
+      <class name="tests.PasswordChangeTest">
+        <methods>
+          <include name="isSkipped"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

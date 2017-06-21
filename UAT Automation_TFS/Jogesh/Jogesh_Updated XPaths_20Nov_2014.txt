@@ -1,0 +1,87 @@
+Updates..
+
+Add
+
+public static Xls_Reader TM_testCasesXls=null;
+
+TM_testCasesXls=new Xls_Reader(System.getProperty("user.dir")+"\\src\\com\\uat\\xls\\TM_Test Cases Suite.xlsx");
+		
+
+
+
+replace this in TestSuiteBase.java file
+
+
+public class TestSuiteBase extends TestBase
+{
+	// check if the suite ex has to be skiped
+		@BeforeSuite
+		public void checkSuiteSkip() throws Exception{
+			initialize();
+			APP_LOGS.debug("Checking Runmode of TM_TestCases Suite");
+			if(!TestUtil.isSuiteRunnable(suiteXls, "TM_TestCases Suite")){
+				APP_LOGS.debug("Skipped TM_Test Case suite as the runmode was set to NO");
+				throw new SkipException("Runmode of TM_Test Cases Suite set to NO ... So Skipping all tests in TM_Test Cases Suite");
+			}
+			
+	
+
+	}
+
+
+
+
+
+Updates Related 
+
+
+#Jogesh Date:11/17/2014
+
+#Test Management_Test Cases
+
+TM_TestCasesTab_Claas=activeNav
+TM_TestCasesTab=//div[@id='LeftPanel']//td[@id='navTestCases']
+
+TestCases_createNewTestCasesLink =//div[@id='RightPanel']//div/h2[2]
+TestCases_viewAllTestCasesLink =//div[@id='RightPanel']//div/h2[1]
+TestCases_TestStepDetailsMessage=//div[@id='RightPanel']/div[1]
+
+#Ids
+TestCases_Download/UploadTemplateTestCasesLink_Id=dwnlupldTmp
+TestCases_CopyTestCasesLink_Id=clon
+TestCases_NoTestCasesAvailable_Id=noTestCaseDiv
+
+TestCases_Tiles_Group_Id=groupTitle
+TestCases_Tiles_Portfolio_Id=portfolioTitle
+TestCases_Tiles_Project_Id=projectTitle
+TestCases_Tiles_Version_Id=versionTitle
+TestCases_Tiles_TestPass_Id=TestPassTitle
+
+#Jogesh Date 11/19/2014
+
+#Test Management_Test Cases
+
+TestCases_ViewAllBulkDeleteButton_Id=btnDelete 
+
+
+
+#TestCase_Crate New links xpath SWati
+TestCases_viewAllTestCaseLink=//div[@id='RightPanel']//div/h2[1]
+TestCases_createNewTestCaseLink=//div[@id='RightPanel']//div/h2[2]
+TestCaseCreateNew_TestCaseNameTextField_Id=txttestcname
+TestCaseCreateNew_TestCaseDescriptionTextField_Id=desc
+TestCaseCreateNew_TestCaseEstTimeInMinTextField_Id=estTime
+TestCaseCreateNew_testCaseSaveBtn_Id = btnSave
+
+#alert ID
+TestCases_createNewAlertText=//div[@id='divAlert']
+
+
+
+
+
+
+
+
+
+

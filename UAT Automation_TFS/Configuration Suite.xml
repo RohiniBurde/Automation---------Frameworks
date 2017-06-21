@@ -1,0 +1,99 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Configuration Suite">
+<listeners>
+     
+</listeners>
+
+<test name="VerifyConfigurationPageLanding">
+    <classes>
+        <class name="com.uat.suite.configuration.VerifyConfigurationPageLanding" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyContentsWithTester">
+    <classes>
+        <class name="com.uat.suite.configuration.VerifyContentsWithTester" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyDocumentLibContent">
+    <classes>
+        <class name="com.uat.suite.configuration.VerifyDocumentLibContent" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyProcessDetailsContent">
+    <classes>
+        <class name="com.uat.suite.configuration.VerifyProcessDetailsContent" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyGeneralSettingsContent">
+    <classes>
+        <class name="com.uat.suite.configuration.VerifyGeneralSettingsContent" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerfiyEditGeneralSettings">
+    <classes>
+        <class name="com.uat.suite.configuration.VerfiyEditGeneralSettings" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerfiyTestStepConstraint">
+    <classes>
+        <class name="com.uat.suite.configuration.VerfiyTestStepConstraint" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifySequentialTestingWithinTC">
+    <classes>
+        <class name="com.uat.suite.configuration.VerifySequentialTestingWithinTC" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifySequentialTestingWithinTP">
+    <classes>
+        <class name="com.uat.suite.configuration.VerifySequentialTestingWithinTP" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyTestingOutOfSequence">
+    <classes>
+        <class name="com.uat.suite.configuration.VerifyTestingOutOfSequence" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyFeedbckAfterEachTPActivty">
+    <classes>
+        <class name="com.uat.suite.configuration.VerifyFeedbckAfterEachTPActivty" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyFeedbackAfterEachPassTC">
+    <classes>
+        <class name="com.uat.suite.configuration.VerifyFeedbackAfterEachPassTC" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyNoFeedbackRatingPopup">
+    <classes>
+        <class name="com.uat.suite.configuration.VerifyNoFeedbackRatingPopup" ></class>  
+    </classes>
+</test>
+
+
+
+</suite>

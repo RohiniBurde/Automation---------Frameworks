@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="11" failed="0" total="12" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite C" duration-ms="15" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+    <groups>
+    </groups>
+    <test name="Test C1" duration-ms="15" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+      <class name="com.qtpselenium.suite.productdisplay.TestCase_C1">
+        <test-method status="SKIP" signature="checkTestSkip()" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+        </test-method>
+        <test-method status="SKIP" signature="testcaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)" name="testcaseC1" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dummy Data_C1_5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dummy Data_C1_6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dummy Data_C1_7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dummy Data_C1_8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="SKIP" signature="testcaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)" name="testcaseC1" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dummy Data_C1_1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dummy Data_C1_2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dummy Data_C1_3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dummy Data_C1_4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="SKIP" signature="testcaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)" name="testcaseC1" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dummy Data_C1_13]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dummy Data_C1_14]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dummy Data_C1_15]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dummy Data_C1_16]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="SKIP" signature="testcaseC1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)" name="testcaseC1" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dummy Data_C1_9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dummy Data_C1_10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dummy Data_C1_11]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dummy Data_C1_12]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+    <test name="Test C2" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+      <class name="com.qtpselenium.suite.productdisplay.TestCase_C2">
+        <test-method status="SKIP" signature="checkSuiteSkip()" name="checkSuiteSkip" is-config="true" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode of Product Display Suite set to no. So Skipping all tests in Suite Product Display]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode of Product Display Suite set to no. So Skipping all tests in Suite Product Display
+	at com.qtpselenium.suite.productdisplay.TestSuiteBase.checkSuiteSkip(TestSuiteBase.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:525)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:130)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:260)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1035)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="SKIP" signature="checkTestSkip()" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+        </test-method>
+        <test-method status="SKIP" signature="testcaseC2()" name="testcaseC2" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+  <suite name="Shop Suite" duration-ms="77046" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:15:48Z">
+    <groups>
+    </groups>
+    <test name="Random Product selection test" duration-ms="76875" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:15:48Z">
+      <class name="com.qtpselenium.suite.shop.RandomSelection">
+        <test-method status="PASS" signature="checkSuiteSkip()" name="checkSuiteSkip" is-config="true" duration-ms="1360" started-at="2011-12-20T09:14:29Z" finished-at="2011-12-20T09:14:31Z">
+        </test-method>
+        <test-method status="PASS" signature="testSelection()" name="testSelection" duration-ms="76641" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:15:47Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTestSkip()" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+        </test-method>
+        <test-method status="PASS" signature="reportDataSetResult()" name="reportDataSetResult" is-config="true" duration-ms="63" started-at="2011-12-20T09:15:47Z" finished-at="2011-12-20T09:15:48Z">
+        </test-method>
+        <test-method status="PASS" signature="reportTestResult()" name="reportTestResult" is-config="true" duration-ms="171" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+        </test-method>
+      </class>
+    </test>
+    <test name="AddProduct Test" duration-ms="31" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+      <class name="com.qtpselenium.suite.shop.AddProductTest">
+        <test-method status="SKIP" signature="checkTestSkip()" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping Test CaseAddProductTest as runmode set to NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping Test CaseAddProductTest as runmode set to NO
+	at com.qtpselenium.suite.shop.AddProductTest.checkTestSkip(AddProductTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:525)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:130)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:624)
+	at org.testng.TestRunner.run(TestRunner.java:592)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1035)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="SKIP" signature="addProductToBasket(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" name="addProductToBasket" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Desire HD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[white]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8 GB]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ABC]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="SKIP" signature="reportDataSetResult()" name="reportDataSetResult" is-config="true" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+        </test-method>
+        <test-method status="SKIP" signature="reportDataSetResult()" name="reportDataSetResult" is-config="true" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+        </test-method>
+        <test-method status="SKIP" signature="addProductToBasket(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" name="addProductToBasket" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone 4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[white]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8 GB]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ABC]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="SKIP" signature="reportDataSetResult()" name="reportDataSetResult" is-config="true" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+        </test-method>
+        <test-method status="SKIP" signature="reportTestResult()" name="reportTestResult" is-config="true" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+        </test-method>
+        <test-method status="SKIP" signature="addProductToBasket(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" name="addProductToBasket" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google Nexus S]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[black]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8 GB]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[XYZ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+    <test name="CheckProduct Display" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+      <class name="com.qtpselenium.suite.shop.CheckProductDisplay">
+        <test-method status="SKIP" signature="testcaseA1()" name="testcaseA1" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+        </test-method>
+        <test-method status="SKIP" signature="reportTestResult()" name="reportTestResult" is-config="true" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+        </test-method>
+        <test-method status="SKIP" signature="checkTestSkip()" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping Test CaseCheckProductDisplay as runmode set to NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping Test CaseCheckProductDisplay as runmode set to NO
+	at com.qtpselenium.suite.shop.CheckProductDisplay.checkTestSkip(CheckProductDisplay.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:525)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:130)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:624)
+	at org.testng.TestRunner.run(TestRunner.java:592)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1035)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="SKIP" signature="reportDataSetResult()" name="reportDataSetResult" is-config="true" duration-ms="0" started-at="2011-12-20T09:14:31Z" finished-at="2011-12-20T09:14:31Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+  <suite name="Cart Suite" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+    <groups>
+    </groups>
+    <test name="CheckTotal Test" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+      <class name="com.qtpselenium.suite.cart.CheckTotal">
+        <test-method status="SKIP" signature="checkTestSkip()" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+        </test-method>
+        <test-method status="SKIP" signature="reportDataSetResult()" name="reportDataSetResult" is-config="true" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+        </test-method>
+        <test-method status="SKIP" signature="reportTestResult()" name="reportTestResult" is-config="true" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+        </test-method>
+        <test-method status="SKIP" signature="testcaseCartTotal()" name="testcaseCartTotal" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+        </test-method>
+      </class>
+    </test>
+    <test name="Test B2" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+      <class name="com.qtpselenium.suite.cart.TestCase_B2">
+        <test-method status="SKIP" signature="checkTestSkip()" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+        </test-method>
+        <test-method status="SKIP" signature="checkSuiteSkip()" name="checkSuiteSkip" is-config="true" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[RUnmode of Cart Suite set to no. So Skipping all tests in Suite A]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: RUnmode of Cart Suite set to no. So Skipping all tests in Suite A
+	at com.qtpselenium.suite.cart.TestSuiteBase.checkSuiteSkip(TestSuiteBase.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:525)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:130)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:260)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1035)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="SKIP" signature="testcaseB2()" name="testcaseB2" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+  <suite name="My suite" duration-ms="0" started-at="2011-12-20T09:15:48Z" finished-at="2011-12-20T09:15:48Z">
+    <groups>
+    </groups>
+  </suite>
+</testng-results>

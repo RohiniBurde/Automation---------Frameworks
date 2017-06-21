@@ -1,0 +1,14 @@
+#Added By Aishwarya
+TraigePageHeadingText=Triage
+Triage_TSGridLinkName=Triage
+Triage_TriagedLinkName=Triaged
+
+#Added By Aishwarya on 10 dec 2014
+Triage_defaultProjectDDText=Select Project
+Triage_defaultVersionDDText=Select Version
+Triage_defaultTestPassDDText=Select Test Pass
+Triage_defaultTesterDDText=Select Tester
+Triage_defaultTesterRoleDDText=Select Role
+Triage_firstTestPassOption=All Test Pass
+Triage_firstTesterOption=All Tester
+Triage_firstTesterRoleOption=All Role

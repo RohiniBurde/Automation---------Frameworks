@@ -1,0 +1,11 @@
+#Report Page Added by Aishwarya
+Reports_pageHeading=pgHeading
+Reports_StatusDropDown_Id=status
+Report_GoButton=//span[@id='pgHeading']/following-sibling::span/img[@title='Show']
+Report_ExportButton=//span[@id='pgHeading']/following-sibling::span/img[2][@title='Export To Excel']
+Reports_ExtractNoTPAvailableText=//div[@id='thisScenario']/span
+Reports_ExtractVersion=VersionName
+Reports_testPassGrid_PassedTS=]/td[6]
+Reports_testPassGrid_FailedTS=]/td[7]
+Reports_testPassGrid_NCTS=]/td[8]
+Testing_actualResult_Id=actualResultWithImage

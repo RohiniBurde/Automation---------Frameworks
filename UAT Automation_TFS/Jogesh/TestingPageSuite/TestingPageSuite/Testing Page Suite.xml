@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Testing Page Suite">
+
+
+
+<test name="Testing_FeedbackRatingOnEachTP">
+
+
+<classes>
+
+<class name="com.uat.suite.testing_page.Testing_FeedbackRatingOnEachTP"/>
+
+</classes>
+
+</test>
+
+
+<test name="Testing_FeedbackRatingOnEachTC">
+
+
+<classes>
+
+<class name="com.uat.suite.testing_page.Testing_FeedbackRatingOnEachTC"/>
+
+</classes>
+
+</test>
+
+
+<test name="Testing_NoFeedbackRatingPopUp">
+
+
+<classes>
+
+<class name="com.uat.suite.testing_page.Testing_NoFeedbackRatingPopUp"/>
+
+</classes>
+
+</test>
+ <test name="Testing_VerifyContentsOfPage">
+  <classes>
+   <class name="com.uat.suite.testing_page.Testing_VerifyContentsOfPage"></class>
+    </classes> 
+    </test> 
+
+
+
+
+</suite>

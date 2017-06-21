@@ -1,0 +1,20 @@
+
+
+DashBoard Page :- 40 Test Cases
+Detailed Analysis = 17 TCs
+Portfolio Feature = 116 Tcs 
+Reports = 17 Tcs
+Query =19 TCs
+Feedback =18 TCs
+Configuration 48 TCs
+Testing Page = 35 Tcs
+Traige = 16 Tcs
+stakeholder Dashboard =85 Tcs
+Yammer = 5Tcs
+
+..........................
+Total Test Cases === 416 (Excluding Test Management Tab)
+
+
+
+

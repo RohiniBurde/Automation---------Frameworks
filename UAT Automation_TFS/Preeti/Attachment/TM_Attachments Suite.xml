@@ -1,0 +1,62 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TM_Attachments Suite">
+
+<test name="VerifyLandingOnAttachmentPage">
+    <classes>
+        <class name="com.uat.suite.tm_attachments.VerifyLandingOnAttachmentPage" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyAttachmentPageContents">
+    <classes>
+        <class name="com.uat.suite.tm_attachments.VerifyAttachmentPageContents" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyAttachmentsCreateNew">
+    <classes>
+        <class name="com.uat.suite.tm_attachments.VerifyAttachmentsCreateNew" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyMoreThanOneAttchmnt">
+    <classes>
+        <class name="com.uat.suite.tm_attachments.VerifyMoreThanOneAttchmnt" ></class>  
+    </classes>
+</test>
+
+
+<test name="EditAttachmentFields">
+    <classes>
+        <class name="com.uat.suite.tm_attachments.EditAttachmentFields" ></class>  
+    </classes>
+</test>
+
+
+<test name="DownloadAttachment">
+    <classes>
+        <class name="com.uat.suite.tm_attachments.DownloadAttachment" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyAllNoneSelectedOptns">
+    <classes>
+        <class name="com.uat.suite.tm_attachments.VerifyAllNoneSelectedOptns" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyValidUserDeleteAttchmnt">
+    <classes>
+        <class name="com.uat.suite.tm_attachments.VerifyValidUserDeleteAttchmnt" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyNo_OfAttachmentsPerPage">
+    <classes>
+        <class name="com.uat.suite.tm_attachments.VerifyNo_OfAttachmentsPerPage" ></class>  
+    </classes>
+</test>
+
+</suite>

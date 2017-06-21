@@ -1,0 +1,210 @@
+
+
+#Jogesh 27 November 2014 
+#Test Management_Tester Details
+TesterAddTester_AreaSelection_Id=area
+
+#Test Management_Test Cases
+TestCasesCreateNew_EstimatedTime_id=estTime
+
+#UAT Tabs
+UATConfigurationTab_Id=config
+UAT_configuration_Id=config
+
+
+#Configuration Tab
+
+
+#Config_UserSettingAddUATEnvironmentAddButton=//div[@id='divUrlPopUp']/following-sibling::div[9]/div[1]/button[1]
+ConfigUserSettingAddUATEnvironmentAddButton=//span[text()='Add']
+#div[@id='divUrlPopUp']/following-sibling::div[9]/div[1]/button[1]
+ConfigUserSettingTesterSelectionCheckBox=//div[@id='userListDiv']//li//input
+ConfigUserSettingEnvironmentSelectionCheckBox=//div[@id='urlboxdiv']//li//input
+ConfigUserSettingEnvironmentName=//div[@id='userSettingGrid']//table//tbody//tr//td//a
+ConfigUserSettingEnvironmentYesButton= //span[text()='Yes']
+ConfigUserSettingEnvironmentOKButton= //span[text()='Ok']
+ConfigGeneralSettingSelectTestPassFromDropdownXPath1=//select[@id='tpForGS']/option[
+ConfigGeneralSettingSelectTestPassFromDropdownXPath2=]
+
+
+ConfigGeneralSettingTab_Id=genSetTab
+ConfigGeneralSettingProjectSelectDropdown_Id=projectForGS
+ConfigGeneralSettingVersionSelectDropdown_Id=projectForGSVersion
+ConfigGeneralSettingTestPassSelectDropdown_Id=tpForGS
+ConfigGeneralSettingSeqTestingWithinTCRadioButton_Id=testingType0
+ConfigGeneralSettingSeqTestingWithinTPRadioButton_Id=testingType1
+ConfigGeneralSettingSeqTestingWithinOutOfTestingRadioButton_Id=testingType2
+ConfigUserSettingTab_Id=userSetTab
+ConfigUserSettingSelectProjectDropdown_Id=projectNames
+ConfigUserSettingSelectProjectVersionNameDropdown_Id=projectNamesVersion
+ConfigUserSettingSelecttestPassNameDropdown_Id=testPassNames
+ConfigUserSettingURL_Id=actualURL
+ConfigUserSettingAliasURL_Id=aliasURL
+ConfigUserSettingAddUATEnvironment_Id=addUATEnvironment
+ConfigUserSettingUATEnvironmentSaveButton_Id=btnSaveUATEnvironment
+ConfigUserSettingAssigningTesterSuccessMessage_id=divConfirm
+
+
+#TestingPage -Jogesh
+#Ids
+TestingPageMyActivityTestPassEndDate_Id=txtDueDate
+TestingPageMyActivityTesterRole_Id=role
+TestingPageCancelButton_Id=btnCancelNew
+TestingPage_NotCompletedRadioButton=radNotCompleted
+TestingPageMyActivityTestCaseName_id=tdTestCase
+TestingPageMyActivityTestStepsTableprevLink_Id=prevPage
+TestingPageMyActivityTestStepsTableNextLink_Id=nextPage
+TestingPageMyActivityEstimatedTime_Id=estTime
+TestingPageMyActivityTestManagerUserName_Id=txtTestManager
+
+TestingPageMyActivity_TestPassStartDateYetToComePopUp_Id= divCompTesting
+TestingPageMyActivity_ActualResult_Id=actualResultWithImage
+TestingPageMyActivity_Attachment_Id=lblAttachment
+TestingPageMyActivity_AttachmentNameBrowseButton_Id=onetidIOFile
+TestingPageMyActivity_AttachmentNameOkButton_Id=attachOKbutton
+TestingPageMyActivity_AttachmentNameSaveButton_Id=ctl00_midPannel_g_5813db46_d81b_4e55_85e7_d6be9540207e_ctl00_toolBarTbltop_RightRptControls_ctl01_ctl00_diidIOSaveItem
+TestingPageMyActivity_AttachmentNameBrowseButton_Id=onetidIOFile
+TestingPageMyActivity_AttachmentNameOkButton_Id=attachOKbutton
+TestingPageMyActivity_ExpectedResultTextArea_Id=expectedResultWithImage
+TestingPageMyActivity_ActualResultTextArea_Id=actualResultWithImage
+TestingPageMyActivityTestCasesDropdown_Id=ddTestCases
+TestingPageMyActivityTestCaseName_Id=tdTestCase
+TestingPageMyActivityInProperSequencingPopUpMessage_Id=divAlert
+
+#Xpths
+
+TestingPageMyActivityTestStepName=//div[@id='txtTestStep']//table//tbody/tr/td[2]
+TestingPageMyActivity_TestPassDropDown=//h2[@id='h2TestPass']/img
+TestingPageMyActivity_EnvironmentDropdown=//td[@id='testUrls']
+TestingPageMyActivity_TestPassDropdownList=//div[@id='testpassdropdown']
+TestingPageMyActivity_EnvironmentALiasName= //div[@id='divUrl']/a
+TestingPageMyActivity_TestStepsPassedCount=//div[@id='wrapper-hd']//div[2]//div[1]//div[1]//div[2]//p/a[1]//span
+TestingPageMyActivity_TestStepsNotCompletedCount=//div[@id='wrapper-hd']//div[2]//div[1]//div[1]//div[2]//p/a[3]//span
+TestingPageMyActivity_TestStepsFailedCount=//div[@id='wrapper-hd']//div[2]//div[1]//div[1]//div[2]//p/a[2]//span
+TestingPageMyActivity_TestStepsPendingCount=//div[@id='wrapper-hd']//div[2]//div[1]//div[1]//div[2]//p/a[4]//span
+TestingPageMyActivity_TestStepsTotalCount=//div[@id='wrapper-hd']//div[2]//div[1]//div[1]//div[2]//p/a[5]//span
+TestingPageMyActivity_EnvironmentEnvUrl=//div[@id='divUrl']/a
+TestingPageMyActivity_TestPassStartDateYetToComePopUp= //div[@id='divCompTesting']//div[1]//a	
+TestingPageMyActivityProjectName=//span[@id='txtProject']
+TestingPageMyActivityTesPassName=//span[@id='txtTestPass']
+TestingPageMyActivityTestPassSelectionfromDropdownXpath1=//div[@id='testpassdropdown']/a[
+TestingPageMyActivityTestPassSelectionfromDropdownXpath2=]
+TestingPageMyActivity_AddAttachmentLink=//label[@id='lblAttachment']//a
+TestingPageMyActivity_AttachmentNameText_Id=ctl00_midPannel_g_5813db46_d81b_4e55_85e7_d6be9540207e_ctl00_ctl05_ctl02_ctl00_ctl00_ctl04_ctl00_ctl00_TextField
+TestingPageMyActivity_AttachmentNameSaveButton_Id=ctl00_midPannel_g_5813db46_d81b_4e55_85e7_d6be9540207e_ctl00_toolBarTbltop_RightRptControls_ctl01_ctl00_diidIOSaveItem
+TestingPageMyActivity_ViewAttachmentLink =//a[@id='preview']//a
+TestingPageMyActivity_ViewAttachmentLink1=//a[@id='preview']//a[1]
+TestingPageMyActivity_ViewAttachmentLink2=//a[@id='preview']//a[1]
+TestingPageMyActivity_ViewAttachmentLink3=//a[@id='preview']//a[2]
+TestingPageMyActivity_ViewAttachmentLink4=//a[@id='preview']//a[3]
+TestingPageMyActivity_ExpectedClickHereToPreviewLink=//*[@id='wrapper-hd']/div[2]/div[1]/div[1]/div[1]/div[4]/div/table/tbody/tr[2]/td[1]/p/a/i
+TestingPageMyActivity_ActualClickHereToPreviewLink =//*[@id='wrapper-hd']/div[2]/div[1]/div[1]/div[1]/div[4]/div/table/tbody/tr[2]/td[3]/p/a/i
+TestingPageMyActivityInProperSequencingPopUp=//div[@aria-labelledby='ui-dialog-title-divAlert']
+TestingPageMyActivityTestStep2Selection=html/body/form/div[4]/div[2]/div[1]/div[1]/div[2]/table/tbody/tr[2]/td[1]/a/b
+TestingPageMyActivityTestStepNameTextOnTestingPage=//*[@id='txtTestStep']/table/tbody/tr/td[2]
+TestingPageMyActivityTestStepsTable=//table[class='tblResult']/tbody
+TestingPageMyActivitySelectTestCaseFromDropdownXpath1= //select[@id='ddTestCases']/option[
+TestingPageMyActivitySelectTestCaseFromDropdownXpath2=]
+TestingPageMyActivitySelectTestPassFromDropdownXpath1=//select[@id='testPassNames']/option[
+TestingPageMyActivitySelectTestPassFromDropdownXpath2=]
+
+
+#preeti Walde -Testing Page
+
+#Sequential Testing within a Test Case--Xpath
+Configuration_testingType1Label=//label[@id='lblTestingType1']
+Configuration_testingType1RadioBtn=//input[@id='testingType0']
+Configuration_testingType2Label=//label[@id='lblTestingType2']
+Configuration_testingType2RadioBtn=//input[@id='testingType1']
+Configuration_testingType3Label=//input[id='testingType2']/following-sibling::label[text()='Testing out of sequence']
+Configuration_testingType3RadioBtn=//input[@id='testingType2']
+UAT_configurationTab_Id = config
+Configuration_selectProjectDropDown_Id=projectForGS
+Configuration_selectVersionDropDown_Id=projectForGSVersion
+Configuration_selectTestPassDropDown_Id=tpForGS
+Configuratiion_GeneralSettingSaveBtn=//div[@id='tab5']/div[4]/input[1]
+#Configuration_roleConfiguration = //ul[@id='ulItemstesterRolesConf']/div/li[
+
+
+
+#preeti Walde -
+
+
+#Dashboard
+DashboardTab_Class = selHeading
+Dashboard_pageHeaderText_Id= pgHeading
+StakeholderDashboardTab_Class = selHeading
+StakeholderDashboard_consolidateViewTab_Id = dvDet
+DashboardMyActivity_noActivityAssignedText = //div[@id='spanMA']/h3
+DashboardMyActivity_table=//table[@id='celebsMA']/tbody
+DashboardMyActivity_Pagination_Id=MyActPagination
+#added on 26Nov 2014 by Preeti
+DashboardMyActivity_projectNameColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_projectNameColumn2=]/td[1]
+DashboardMyActivity_versionColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_versionColumn2=]/td[2]
+DashboardMyActivity_testPassNameColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_testPassNameColumn2=]/td[3]
+DashboardMyActivity_roleNameColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_roleNameColumn2=]/td[4]/span
+DashboardMyActivity_daysLeftColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_daysLeftColumn2=]/td[5]
+DashboardMyActivity_notCompletedCountColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_notCompletedCountColumn2=]/td[6]
+DashboardMyActivity_passCountColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_passCountColumn2=]/td[7]
+DashboardMyActivity_failCountColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_failCountColumn2=]/td[8]
+DashboardMyActivity_actionColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_actionColumn2=]/td[9]/a
+DashboardMyActivity_NextLink=//div[@id='MyActPagination']/div/a[text()='Next']
+
+
+
+
+
+#Testing Page
+TestingPage_passRadioButton_Id = radPass
+TestingPage_failRadioButton_Id = radFail
+TestingPage_pendingRadioButton_Id = radPending
+TestingPage_actualResult_TextBox_Id = actualResultWithImage
+TestingPage_saveButton_Id = btnSave
+TestingPage_showNextLink_Id = next
+
+
+#added on 27Nov
+TestingPage_feebackRatingPopup = //div[@aria-labelledby='ui-dialog-title-FeedbackPopUpRTE']
+TestingPage_feebackRatingPopup_Text = //span[@id='ui-dialog-title-FeedbackPopUpRTE']
+TestingPage_rating_verySatisfiedRadioBtn = //div[@id='rating']/table/tbody/tr[1]/td[1]/input
+TestingPage_rating_veryDissatisfiedRadioBtn = //div[@id='rating']/table/tbody/tr[1]/td[2]/input
+TestingPage_rating_somewhatSatisfiedRadioBtn = //div[@id='rating']/table/tbody/tr[2]/td[1]/input
+TestingPage_rating_somewhatDissatisfiedRadioBtn = //div[@id='rating']/table/tbody/tr[2]/td[2]/input
+TestingPage_feedback_IframeName = rte3
+TestingPage_feedbackRating_SaveButton = //span[text()='Save']
+TestingPage_returnToHomeButton = //span[text()='Return to Home']
+DashboardMyActivity_daysLeftHoverColumn = //table[@id='celebsMA']/thead/tr[1]/td[5]
+DashboardMyActivity_notCompletedHoverColumn = //table[@id='celebsMA']/thead/tr[1]/td[6]
+DashboardMyActivity_offlineTestingHoverColumn_Id = nhovertextOfflinetesting
+
+#Swati_Configuration Page selection drop down on date:-27th Nov 2014
+#Configuration Tab 
+Configuration_selectProjectDropDown_Id=projectForGS
+Configuration_selectVersionDropDown_Id=projectForGSVersion
+Configuration_selectTestPassDropDown_Id=tpForGS
+
+Configuration_feedbackRatingOption1Label=//label[@id='lblFeedbackRatingOption1']
+Configuration_feedbackRatingOption1RadioBtn=//input[@id='feedbackRating0']
+#Swati_29_11_2014
+Configuration_feedbackRatingOption2Label=//label[@id='lblFeedbackRatingOption2']
+Configuration_feedbackRatingOption2RadioBtn=//input[@id='feedbackRating1']
+Configuration_feedbackRatingOption3Label=//label[@id='lblFeedbackRatingOption3']
+Configuration_feedbackRatingOption3RadioBtn=//input[@id='feedbackRating2']
+Configuratiion_GeneralSettingSaveBtn=//div[@id='tab5']/div[4]/input[1]
+
+
+#Swati_Testing Page 28th Nov 2014
+TestingPage_testStepFeebackPopup = //div[@aria-labelledby='ui-dialog-title-divAlert']
+
+TestingPage_goToFeedbackButton = //span[text()='Go to Feedback']
+TestingPage_continueTestingButton = //span[text()='Continue Testing']
+TestingPage_feedbackNote =//div[@id='feedbackNote']

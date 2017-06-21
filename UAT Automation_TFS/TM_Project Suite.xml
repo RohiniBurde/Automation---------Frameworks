@@ -1,0 +1,83 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TM_Project Suite">
+
+
+<test name="VerifyLandingOnProjPage">
+    <classes>
+        <class name="com.uat.suite.tm_project.VerifyLandingOnProjPage" ></class>  
+    </classes>
+</test>
+
+
+<test name="Tester_TMnStakeDashDisabled">
+    <classes>
+        <class name="com.uat.suite.tm_project.Tester_TMnStakeDashDisabled" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyTMTabHighlighted">
+    <classes>
+        <class name="com.uat.suite.tm_project.VerifyTMTabHighlighted" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyProjectName">
+    <classes>
+        <class name="com.uat.suite.tm_project.VerifyProjectName" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyProjNameLength">
+    <classes>
+        <class name="com.uat.suite.tm_project.VerifyProjNameLength" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyFieldsForCreNewProj">
+    <classes>
+        <class name="com.uat.suite.tm_project.VerifyFieldsForCreNewProj" ></class>  
+    </classes>
+</test>
+
+
+<test name="EditProjectFields">
+    <classes>
+        <class name="com.uat.suite.tm_project.EditProjectFields" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyNo_OfProjRecordsPerPage">
+    <classes>
+        <class name="com.uat.suite.tm_project.VerifyNo_OfProjRecordsPerPage" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyProjFieldsValidation">
+    <classes>
+        <class name="com.uat.suite.tm_project.VerifyProjFieldsValidation" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyMaxNo_OfStakeholders">
+    <classes>
+        <class name="com.uat.suite.tm_project.VerifyMaxNo_OfStakeholders" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyValidUserDeleteProjects">
+    <classes>
+        <class name="com.uat.suite.tm_project.VerifyValidUserDeleteProjects" ></class>  
+    </classes>
+</test>
+
+
+
+</suite>

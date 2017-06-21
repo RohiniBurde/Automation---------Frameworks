@@ -1,0 +1,67 @@
+#Added by Aishwarya on 26 nov 2014
+UAT_triage_Id =trig
+Traige_pageHeading=//div[@id='wrapper-hd']/div[2]/div[2]/h1[1]/span[1]
+Triage_projectDropDown_Id=projSelect
+Triage_versionDropDown_Id=versionSelect
+Triage_testPassDropDown_Id=scenSelect
+Triage_testerDropDown_Id=tester
+Triage_testerRoleDropDown_Id=roleList
+Dashboard_MyActivitiesTable=//tbody[@id='myact']
+Dashboard_ExtractProjectNameXpath1=//tbody[@id='myact']/tr[
+Dashboard_ExtractProjectNameXpath2=]/td[1]
+Dashboard_ExtractVersionXpath2=]/td[2]
+Dashboard_ExtractTestPassNameXpath2=]/td[3]
+Dashboard_ExtractRoleXpath2=]/td[4]/span
+Dashboard_BeginTestingLinkXpath2=]/td[9]/a[1]
+Testing_failRadioButton_Id=radFail
+Testing_passRadioButton_Id=radPass
+Testing_ratingSomewhatsatisfied=//div[@id='rating']/table[1]/tbody[1]/tr[2]/td[1]/input[1]
+Testing_ratingSaveButton=//button/span[text()='Save']
+Testing_testStepFeedback=//button/span[text()='Return to Home']
+Triage_goButton_img=btnGo
+Triage_exportButton_img=btnExp
+Triage_testStepDetailSection=//div[@id='testStepDetails']/span
+Traige_testStepGrid=//div[@id='testStepDetails']/table/tbody
+Triage_failedTestStepNameXpath1=//div[@id='testStepDetails']/table/tbody/tr[
+Triage_failedTestStepNameXpath2=]/td[3]
+Triage_TSGrid_link=]/td[11]/a
+Triage_ExtractProjectName=projectName
+Triage_ExtractProjectID=//h2[@id='projectName']/span
+Triage_ExtractProjectDescription=projDesc
+Triage_testPassGrid=//div[@id='thisScenario']/table/tbody
+Triage_testPassGridDetails1=//div[@id='thisScenario']/table/tbody/tr[
+Triage_testPassGrid_TPID2=]/td[1]
+Triage_testPassGrid_TPName2=]/td[2]
+Triage_testPassGrid_TPDescription2=]/td[3]
+Triage_testPassGrid_TestManger2=]/td[4]
+Triage_testPassGrid_TPEndDate2=]/td[5]
+TriagePopupWindow_Bug=//div[@id='dvTriage']/table/tbody/tr[1]/td[2]
+TriagePopupWindow_BugCondition=//div[@id='dvTriage']/table/tbody/tr[1]/td[2]/input[
+TriagePopupWindow_BugYes=//div[@id='dvTriage']/table/tbody/tr[1]/td[2]/input[1]
+TriagePopupWindow_TriageDetails_Id=details
+TriagePopupWindow_Owner_PeoplePickerImg=//a[@id='ctl00_midPannel_Owner_browse']/img[1]
+TriagePopupWindow_Owner_Id=ctl00_midPannel_Owner_upLevelDiv
+TriagePopupWindow_TestingDate_Id=testingDate
+TriagePopupWindow_Status_Id=status
+TriagePopupWindow_Priority_Id=priority
+TriagePopupWindow_Severity_Id=severity
+TriagePopupWindow_CloseDate=closedDate
+TriagePopupWindow_CloseDate_img=//input[@id='closedDate']/following-sibling::img[@title='Select Date']
+TriagePopupWindow_BugTitle_Id=title
+TriagePopupWindow_BugUrl_Id=url
+Triage_ExtractBugTitle2=]/td[10]
+
+#Project Pagiantion ID
+ProjectViewAll_IDColXpath2=]/td[1]/span
+
+#Test Pass Pagination OR 
+TestPassViewAll_Pagination_Id=Pagination1
+TestPassViewAll_PreviousLink=//div[@id='Pagination1']/div/a[text()='Prev']
+TestPassViewAll_NextLink=//div[@id='Pagination1']/div/a[text()='Next']
+TestPassViewAll_Table_Id =showTestPass
+TestPassViewAll_testPassNameXpath1 =//tbody[@id='showTestPass']/tr[
+TestPassViewAll_testPassNameXpath2 =]/td[2]/span
+TestPassViewAll_editProjectIcon1=//tbody[@id='showTestPass']/tr[
+TestPassViewAll_editProjectIcon2=]/td[6]/a[1]/img
+TestPass_Description_Id=desc
+TestPassCreateNew_testManagerDisplayField=//div[@id='ctl00_ctl00_midPannel_ContentPlaceHolder1_Child_ContentPlaceHolder1_PeopleEditorUser2_upLevelDiv']/span/span

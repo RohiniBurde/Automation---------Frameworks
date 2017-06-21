@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Password Change Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Login Test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">20.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Post Add Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Registration Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test Base</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">2</td><td class="numi">2</td><td class="numi_attn">4</td><td class="numi_attn">1</td><td class="numi">20.9 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Password Change Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">tests.PasswordChangeTest<td><a href="#m1"><b>isSkipped</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Password Change Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">tests.PasswordChangeTest<td><a href="#m2"><b>testPasswordChange</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Login Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">tests.LoginTest<td><a href="#m3"><b>testLogin</b>  </a></td><td class="numi">1</td><td class="numi">13375</td></tr>
+<tr><th colspan="4">Login Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">tests.LoginTest<td><a href="#m4"><b>testLogin</b>  </a></td><td class="numi">2</td><td class="numi">20907</td></tr><tr class="passedodd"><td><a href="#m5"><b>testLogin</b>  </a></td><td class="numi">2</td><td class="numi">20907</td></tr>
+<tr><th colspan="4">Post Add Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">tests.PostAddTest<td><a href="#m6"><b>isSkipped</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Post Add Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">tests.PostAddTest<td><a href="#m7"><b>testPostAdd</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Registration Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">tests.RegisterTest<td><a href="#m8"><b>isSkipped</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Registration Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="2">tests.RegisterTest<td><a href="#m9"><b>testRegistration</b>  </a></td><td class="numi">2</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m10"><b>testRegistration</b>  </a></td><td class="numi">2</td><td class="numi">0</td></tr>
+</table>
+<h1>Password Change Test</h1>
+<a id="m1"></a><h2>tests.PasswordChangeTest:isSkipped</h2>
+<div style="padding-left:3em">
+<p>Runmode set to No</p>
+tests.PasswordChangeTest.isSkipped(PasswordChangeTest.java:13)
+<br/>22 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>tests.PasswordChangeTest:testPasswordChange</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Login Test</h1>
+<a id="m3"></a><h2>tests.LoginTest:testLogin</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">regSel2</td>
+<td style="padding-left:.5em;padding-right:2em">password12341</td>
+<td style="padding-left:.5em;padding-right:2em">true</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="3">
+<p>not able to login with valid credentials</p>
+tests.LoginTest.testLogin(LoginTest.java:29)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>tests.LoginTest:testLogin</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">regSel2</td>
+<td style="padding-left:.5em;padding-right:2em">password12341</td>
+<td style="padding-left:.5em;padding-right:2em">true</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="3">
+<p>not able to login with valid credentials</p>
+tests.LoginTest.testLogin(LoginTest.java:29)
+<br/>25 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">yavjhjb</td>
+<td style="padding-left:.5em;padding-right:2em">kjkjlj</td>
+<td style="padding-left:.5em;padding-right:2em">false</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>tests.LoginTest:testLogin</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">regSel2</td>
+<td style="padding-left:.5em;padding-right:2em">password12341</td>
+<td style="padding-left:.5em;padding-right:2em">true</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="3">
+<p>not able to login with valid credentials</p>
+tests.LoginTest.testLogin(LoginTest.java:29)
+<br/>25 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">yavjhjb</td>
+<td style="padding-left:.5em;padding-right:2em">kjkjlj</td>
+<td style="padding-left:.5em;padding-right:2em">false</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Post Add Test</h1>
+<a id="m6"></a><h2>tests.PostAddTest:isSkipped</h2>
+<div style="padding-left:3em">
+<p>Runmode set to No</p>
+tests.PostAddTest.isSkipped(PostAddTest.java:13)
+<br/>22 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>tests.PostAddTest:testPostAdd</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Registration Test</h1>
+<a id="m8"></a><h2>tests.RegisterTest:isSkipped</h2>
+<div style="padding-left:3em">
+<p>Runmode set to No</p>
+tests.RegisterTest.isSkipped(RegisterTest.java:23)
+<br/>22 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>tests.RegisterTest:testRegistration</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th><th style="padding-left:1em;padding-right:1em">Parameter #5</th><th style="padding-left:1em;padding-right:1em">Parameter #6</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">Ashish</td>
+<td style="padding-left:.5em;padding-right:2em">regSel1</td>
+<td style="padding-left:.5em;padding-right:2em">password1234</td>
+<td style="padding-left:.5em;padding-right:2em">regtestsel2@gmail.com</td>
+<td style="padding-left:.5em;padding-right:2em">Delhi</td>
+<td style="padding-left:.5em;padding-right:2em">false</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">Ashish</td>
+<td style="padding-left:.5em;padding-right:2em">regSel2</td>
+<td style="padding-left:.5em;padding-right:2em">password1234</td>
+<td style="padding-left:.5em;padding-right:2em">regtestsel2@gmail.com</td>
+<td style="padding-left:.5em;padding-right:2em">Delhi</td>
+<td style="padding-left:.5em;padding-right:2em">true</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>tests.RegisterTest:testRegistration</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th><th style="padding-left:1em;padding-right:1em">Parameter #5</th><th style="padding-left:1em;padding-right:1em">Parameter #6</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">Ashish</td>
+<td style="padding-left:.5em;padding-right:2em">regSel1</td>
+<td style="padding-left:.5em;padding-right:2em">password1234</td>
+<td style="padding-left:.5em;padding-right:2em">regtestsel2@gmail.com</td>
+<td style="padding-left:.5em;padding-right:2em">Delhi</td>
+<td style="padding-left:.5em;padding-right:2em">false</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">Ashish</td>
+<td style="padding-left:.5em;padding-right:2em">regSel2</td>
+<td style="padding-left:.5em;padding-right:2em">password1234</td>
+<td style="padding-left:.5em;padding-right:2em">regtestsel2@gmail.com</td>
+<td style="padding-left:.5em;padding-right:2em">Delhi</td>
+<td style="padding-left:.5em;padding-right:2em">true</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Test Base</h1>
+</body></html>

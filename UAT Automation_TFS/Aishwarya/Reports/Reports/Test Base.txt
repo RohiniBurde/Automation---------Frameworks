@@ -1,0 +1,3 @@
+public static Xls_Reader ReportsSuiteXls=null;
+
+ReportsSuiteXls= new Xls_Reader(System.getProperty("user.dir")+"\\src\\com\\uat\\xls\\Reports Suite.xlsx");

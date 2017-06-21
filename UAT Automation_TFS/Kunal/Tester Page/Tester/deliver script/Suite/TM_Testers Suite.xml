@@ -1,0 +1,81 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TM_Testers Suite">
+
+
+
+<test name="VerifyLandingOnTesterPage">
+    <classes>
+        <class name="com.uat.suite.tm_tester.VerifyLandingOnTesterPage" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyTesterPageContents">
+    <classes>
+        <class name="com.uat.suite.tm_tester.VerifyTesterPageContents" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyTesterAddEditDeleteRole">
+    <classes>
+        <class name="com.uat.suite.tm_tester.VerifyTesterAddEditDeleteRole" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyAssignedAddEditDeleteRole">
+    <classes>
+        <class name="com.uat.suite.tm_tester.VerifyAssignedAddEditDeleteRole" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyAddTesterWithFieldValidtn">
+    <classes>
+        <class name="com.uat.suite.tm_tester.VerifyAddTesterWithFieldValidtn" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyEditTesterDetail">
+    <classes>
+        <class name="com.uat.suite.tm_tester.VerifyEditTesterDetail" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyDeleteTester">
+    <classes>
+        <class name="com.uat.suite.tm_tester.VerifyDeleteTester" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyDownloadUploadTemplate">
+    <classes>
+        <class name="com.uat.suite.tm_tester.VerifyDownloadUploadTemplate" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyTesterAssignedToMultplTP">
+    <classes>
+        <class name="com.uat.suite.tm_tester.VerifyTesterAssignedToMultplTP" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyRoleBoxUIChangByTesterGrp">
+    <classes>
+        <class name="com.uat.suite.tm_tester.VerifyRoleBoxUIChangByTesterGrp" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyPaginationOnViewAll">
+    <classes>
+        <class name="com.uat.suite.tm_tester.VerifyPaginationOnViewAll" ></class>  
+    </classes>
+</test>
+
+
+</suite>
+

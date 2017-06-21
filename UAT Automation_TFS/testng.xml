@@ -1,0 +1,44 @@
+<suite name=" UAT Automation suite">
+<!-- <listeners>
+    	<listener class-name="com.uat.listener.TestsListenerAdapter" />
+       	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+       	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners> -->
+  
+<suite-files>
+<!--    
+  <suite-file path="./TM_Project Suite.xml" />  
+
+  <suite-file path="./TM_TestPass Suite.xml" />  
+ 
+  <suite-file path="./TM_Testers Suite.xml" />  
+
+  <suite-file path="./TM_TestCases Suite.xml" />  
+    
+  <suite-file path="./TM_TestSteps Suite.xml" />
+   
+  <suite-file path="./TM_Attachments Suite.xml" />
+ 
+  <suite-file path="./Dashboard Suite.xml" />
+ 
+  <suite-file path="./Testing Page Suite.xml" />  
+   
+  <suite-file path="./Detailed Analysis Suite.xml" />
+    
+  <suite-file path="./Reports Suite.xml" />
+     
+  <suite-file path="./Triage Suite.xml" />
+
+  <suite-file path="./Delete Projects Suite.xml" />
+  
+  <suite-file path="./Configuration Suite.xml" />
+-->
+  <suite-file path="./Stakeholder Dashboard Suite.xml" />
+<!--  
+  <suite-file path="./SD_DetailedView Suite.xml" />
+   
+  <suite-file path="./Feedback Page Suite.xml" />
+-->  
+ </suite-files>
+   
+</suite>

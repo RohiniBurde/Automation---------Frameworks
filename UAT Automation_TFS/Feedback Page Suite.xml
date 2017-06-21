@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Feedback Page Suite">
+
+
+<test name="FeedbackPage_VerifyFields">
+    <classes>
+        <class name="com.uat.suite.feedback_page.FeedbackPage_VerifyFields"></class>  
+    </classes>
+</test>
+
+<test name="FBPage_VerifyGridUnderTestMgr">
+    <classes>
+        <class name="com.uat.suite.feedback_page.FBPage_VerifyGridUnderTestMgr"></class>  
+            </classes>
+</test>
+
+<test name="VerifyFBPageAfterUpdatingTestMr">
+    <classes>
+        <class name="com.uat.suite.feedback_page.VerifyFBPageAfterUpdatingTestMr"></class>  
+            </classes>
+</test>
+
+<test name="FBPage_VerifyGridUnderTester">
+    <classes>
+        <class name="com.uat.suite.feedback_page.FBPage_VerifyGridUnderTester"></class>  
+            </classes>
+</test>
+
+<test name="FBPage_VerifyXportFunctionality">
+    <classes>
+        <class name="com.uat.suite.feedback_page.FBPage_VerifyXportFunctionality"></class>  
+            </classes>
+</test>
+    
+</suite>

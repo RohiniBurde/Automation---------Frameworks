@@ -1,0 +1,9 @@
+public static Xls_Reader detailedAnalysisXls=null;
+
+.
+.
+.
+.
+.
+
+detailedAnalysisXls=new Xls_Reader(System.getProperty("user.dir")+"\\src\\com\\uat\\xls\\DetailedAnalysis Suite.xlsx");

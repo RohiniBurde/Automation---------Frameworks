@@ -1,0 +1,696 @@
+package com.uat.suite.tm_testcases;
+
+import java.util.ArrayList;
+
+import org.testng.SkipException;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import com.uat.base.Credentials;
+import com.uat.util.TestUtil;
+
+@Listeners(com.uat.listener.TestsListenerAdapter.class)
+
+public class TCs_VerifyContentsOfTCspage1 extends TestSuiteBase {
+	
+	
+	String runmodes[]=null;
+	boolean fail=false;
+	boolean skip=false;
+	boolean isTestPass=true;
+	int count=-1;
+	boolean isLoginSuccess=false;
+	ArrayList<Credentials> versionLead;
+	ArrayList<Credentials> testManager;
+	ArrayList<Credentials> testers;
+	String comments;
+	
+	// Runmode of test case in a suite
+	
+		@BeforeTest
+		public void checkTestSkip(){
+			
+			if(!TestUtil.isTestCaseRunnable(TM_testCasesSuiteXls,this.getClass().getSimpleName())){
+				APP_LOGS.debug("Skipping Test Case"+this.getClass().getSimpleName()+" as runmode set to NO");//logs
+				throw new SkipException("Skipping Test Case"+this.getClass().getSimpleName()+" as runmode set to NO");//reports
+			}
+			runmodes=TestUtil.getDataSetRunmodes(TM_testCasesSuiteXls, this.getClass().getSimpleName());
+			
+			versionLead=new ArrayList<Credentials>();
+			testManager=new ArrayList<Credentials>();
+			testers=new ArrayList<Credentials>();
+		}
+	
+		// Test Case Implementation ...
+			
+		@Test(dataProvider="getTestData")
+		public void Test_TCs_VerifyContentsOfTCspage (String Role,String GroupName,String PortfolioName,
+				String ProjectName, String Version,String EndMonth, String EndYear, String EndDate, 
+				String VersionLead ,String TestPassName,String TestManager,String Tester,String AddRole,
+				String expectedProjectsTabText,String expectedTestPassesText,String expectedTestersTabText,
+				String expectedTestCasesTabText,String expectedTestStepsTabText,String expectedAttachmentsTabText) throws Exception
+		{
+				count++;
+				comments="";
+				
+				if(!runmodes[count].equalsIgnoreCase("Y")){
+					skip=true;
+					APP_LOGS.debug("Runmode for test set data no. "+(count+1)+" set to no.........So its skipping Test Set Data No."+(count+1));;
+		
+					throw new SkipException("Runmode for test set data no. "+(count+1)+" set to no");
+							}
+				
+				
+				int testManager_count = Integer.parseInt(TestManager);
+				
+				testManager=new ArrayList<Credentials>();
+				testManager = getUsers("Test Manager", testManager_count);
+				
+				
+				int versionLead_count = Integer.parseInt(VersionLead);
+				
+				versionLead=new ArrayList<Credentials>();
+				versionLead = getUsers("Version Lead", versionLead_count);
+				
+				int testers_count = Integer.parseInt(Tester);			
+				testers = getUsers("Tester", testers_count);
+				
+				
+				
+				
+				
+				APP_LOGS.debug(" Executing Test Case :-"+ this.getClass().getSimpleName());
+				
+				System.out.println(" Executing Test Case :-"+ this.getClass().getSimpleName());				
+				
+				APP_LOGS.debug("Opening Browser... ");
+				
+				System.out.println("Opening Browser... ");
+				
+				openBrowser();
+				
+				
+				isLoginSuccess = login(Role);
+				
+				if(isLoginSuccess)
+				{
+					try
+					{
+					
+						//click on testManagement tab
+						APP_LOGS.debug("Clicking On Test Management Tab ");
+						
+						System.out.println("Clicking On Test Management Tab ");
+						
+						getElement("UAT_testManagement_Id").click();
+						
+						Thread.sleep(1000);
+						
+						APP_LOGS.debug(" User "+ Role +" creating PROJECT with Version Lead "+versionLead.get(0).username );
+						
+						System.out.println(" User "+ Role +" creating PROJECT with Version Lead "+versionLead.get(0).username);
+						
+						if (!createProject(GroupName, PortfolioName, ProjectName, Version, EndMonth, EndYear, EndDate, versionLead.get(0).username))
+						{	
+							
+							fail=true;
+							assertTrue(false);
+							TestUtil.takeScreenShot(this.getClass().getSimpleName(), "ProjectCreationFailure");
+							comments="Project Creation Unsuccessful(Fail) by "+Role+"  . ";
+							APP_LOGS.debug("Project Creation Unsuccessful(Fail) by "+Role+". ");
+							closeBrowser();
+							throw new SkipException("Project Creation Unsuccessfull");
+						}
+						
+						APP_LOGS.debug("Closing Browser... ");
+						
+						System.out.println("Closing Browser... ");						
+						
+						closeBrowser();
+						
+					
+					
+						APP_LOGS.debug("Opening Browser...Logging In With Role Version Lead "+versionLead.get(0).username + " to create Test Pass ");
+						
+						System.out.println("Opening Browser...Logging In With Role Version Lead "+versionLead.get(0).username + " to create Test Pass ");
+						
+						openBrowser();
+						
+						if (login(versionLead.get(0).username,versionLead.get(0).password, "Version Lead")) 
+						{
+							
+							
+							//click on testManagement tab
+							APP_LOGS.debug("Clicking On Test Management Tab ");
+							
+							System.out.println("Clicking On Test Management Tab ");
+							
+							getElement("UAT_testManagement_Id").click();
+							
+							Thread.sleep(2000);
+							
+							if (!createTestPass(GroupName, PortfolioName, ProjectName, Version, TestPassName, EndMonth, EndYear, EndDate, testManager.get(0).username))
+							{		
+								
+								fail=true;
+								assertTrue(false);
+								TestUtil.takeScreenShot(this.getClass().getSimpleName(), "TestPassCreationFailure");
+								comments="Test Pass Creation Unsuccessful(Fail)   ." ;
+								APP_LOGS.debug("Test Pass CreationUnsuccessful(Fail)");
+								closeBrowser();
+								throw new SkipException("Test Pass Creation Unsuccessfull");
+							}
+							
+							APP_LOGS.debug("Closing Browser... ");
+						
+							System.out.println("Closing Browser... ");
+												
+							closeBrowser();
+					
+					
+					
+
+							APP_LOGS.debug("Opening Browser...Logging In With Role Test Manager "+testManager.get(0).username + " to create Testers ");
+							
+							System.out.println("Opening Browser...Logging In With Role Test Manager "+testManager.get(0).username + " to create Testers ");
+							openBrowser();
+						
+							if (login(testManager.get(0).username,testManager.get(0).password, "Test Manager")) 
+							{
+							
+								//click on testManagement tab
+								APP_LOGS.debug("Clicking On Test Management Tab ");
+							
+								System.out.println("Clicking On Test Management Tab ");
+							
+								getElement("UAT_testManagement_Id").click();
+							
+								Thread.sleep(2000);
+							
+								if (!createTester(GroupName, PortfolioName, ProjectName, Version, TestPassName, testers.get(0).username,AddRole, AddRole)) 
+								{	
+									
+									fail=true;
+									assertTrue(false);
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "TesterCreationFailure");
+									comments="Tester Creation Unsuccessful(Fail)" ;
+									APP_LOGS.debug("Tester Creation Unsuccessfull");
+									closeBrowser();
+									throw new SkipException("Tester Creation Unsuccessfull");
+								}
+							
+							
+								APP_LOGS.debug("Clicking on Test Cases Tab");
+								System.out.println("Clicking on Test Cases Tab");
+								getElement("TestCaseNavigation_Id").click();
+								
+							
+							
+							
+								APP_LOGS.debug("is Navigation Panel Displaying Properly...?????? ");
+							
+								System.out.println("is Navigation Panel Displaying Properly...?????? ");
+							
+								if(getElement("TM_LeftPanel_Id").isDisplayed())
+								{
+									APP_LOGS.debug("Yes....Navigation Panel is Displayed Properly");
+								
+								}
+								else
+								{	
+									fail=true;
+									APP_LOGS.debug("Oooopppsss...!!! Navigation Panel is Distracting Somewhere : Failed  ");
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "NavigationPanelIssue");
+									comments=comments+"Navigation Panel is not showing proper (Fail)   .";
+									
+								
+								}
+							
+								Thread.sleep(1000);
+							
+							
+								// Verifying Text Of PROJECTS Tab
+							
+								String projectsTab_Text=getElement("TM_projectsTab_Id").getText();
+						
+							
+								if(compareStrings(expectedProjectsTabText, projectsTab_Text))
+								{
+							
+									System.out.println(expectedProjectsTabText + "\n" + "Project Tab Text Showing properly...");
+								
+									APP_LOGS.debug(expectedProjectsTabText + "\n" + "Project Tab Text Showing properly...");
+							
+								}
+								else
+								{
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "ProjectTabTextIssue");
+									comments=comments+" Project Tab Text - NOT Present : (Fail)     .";
+									APP_LOGS.debug("Oooopppsss...!!! Project Tab Text - NOT Present  : Failed. ");
+								}
+							
+							
+							
+							
+								
+									// Verifying Text Of TEST PASSES Tab
+								
+								String testPassesTab_Text=getElement("TM_testPassesTab_Id").getText();
+								
+								
+								if(compareStrings(expectedTestPassesText, testPassesTab_Text))
+								{
+								
+									
+									
+									APP_LOGS.debug(expectedTestPassesText + "\n" + "TEST PASSES Tab Showing properly...");
+								
+								}
+								else
+								{
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "TestPassesTabTextIssue");
+									comments=comments+" TEST PASSES Tab Text - NOT Present : (Fail)     .";
+									APP_LOGS.debug("Oooopppsss...!!! TEST PASSES Tab Text - NOT Present  : Failed. ");
+								}
+								
+								
+								
+							
+								
+								
+								
+								
+								// Verifying Text Of TESTERS Tab
+								
+								String testersTab_Text=getElement("TM_testersTab_Id").getText();
+							
+								
+								if(compareStrings(expectedTestersTabText,testersTab_Text))
+								{
+									
+									APP_LOGS.debug(expectedTestersTabText + "\n" + " TESTERS Text Showing properly...");
+								
+								}
+								else
+								{
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "TestersTabTextIssue");
+									comments=comments+" TESTERS Tab Text - NOT Present : (Fail)     .";
+									APP_LOGS.debug("Oooopppsss...!!! TESTERS Tab Text - NOT Present  : Failed. ");
+								}
+								
+								
+					
+								// Verifying Text Of TEST CASES Tab
+								
+								String testcasesTab_Text=getElement("TM_testCasesTab_Id").getText();
+							
+								
+								if(compareStrings(expectedTestCasesTabText,  testcasesTab_Text))
+								{
+								
+									System.out.println(expectedTestCasesTabText + "\n" + "TEST CASES Tab Text Showing properly...");
+								
+								}
+								else
+								{
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "TestCasesTabTextIssue");
+									comments=comments+"Test Cases Tab Text - NOT Present : (Fail)    .";
+									APP_LOGS.debug("Oooopppsss...!!! TEST Cases Tab Text - NOT Present  : Failed. ");
+									
+								}
+								
+								
+								
+								
+					
+								
+								
+								// Verifying Text Of TEST STEPS Tab
+								
+								String testStepsTab_Text=getElement("TM_testStepsTab_Id").getText();
+							
+								
+								if(compareStrings(expectedTestStepsTabText, testStepsTab_Text))
+								{
+								
+									System.out.println(expectedTestStepsTabText + "\n" + "TEST STEPS Tab Text Showing properly...");
+									
+									APP_LOGS.debug(expectedTestStepsTabText + "\n" + "TEST STEPS Tab Text Showing properly...");
+								
+								}
+								else
+								{
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "TestStepsTabTextIssue");
+									comments=comments+"Test Steps Tab Text - NOT Present : (Fail)    .";
+									APP_LOGS.debug("Oooopppsss...!!! Test Step Tab Text - NOT Present  : Failed. ");
+									
+									
+								}
+								
+								
+								
+							
+								
+								
+								// Verifying Text Of ATTACHMENTS Tab
+								
+								String attachmentsTab_Text=getElement("TM_attachmentsTab_Id").getText();
+							
+								
+								if(compareStrings(expectedAttachmentsTabText,attachmentsTab_Text))
+								{
+								
+									APP_LOGS.debug(expectedAttachmentsTabText + "\n" + "ATTACHMENTS  Tab Text Showing properly...");
+								
+								}
+								else
+								{
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "AttachmentsTaBTextIssue");
+									comments=comments+"Attachments Tab Text - NOT Present : (Fail)    .";
+									APP_LOGS.debug("Oooopppsss...!!! Attachments Tab Text NOT Present  : Failed. ");
+									
+								}
+								
+								
+								
+							
+								
+								// Verifying VIEW ALL Link is available or not
+								
+								String viewAllLinkText=getObject("TestCases_viewAllTestCasesLink").getText();
+									
+								if(compareStrings(viewAllLinkText,resourceFileConversion.getProperty("TM_TestCasesTab_ViewAllLink_Text")))
+								{
+									
+									APP_LOGS.debug("TEST CASES Page VIEW ALL Link : is showing properly..");
+								
+								}
+								else
+								{
+									fail=true;
+									APP_LOGS.debug("Oooopppsss...!!! TEST CASES Page VIEW ALL Link : Broken Or NOT Present");
+									comments=comments+"TEST CASES Page VIEW ALL Link : Broken Or NOT Present(Fail)   .";
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "TestCases_ViewAllTextBrokenOrNotPresent ");
+								}
+								
+								
+								
+								
+							
+								
+								
+								// Verifying CREATE NEW Link is available or not
+								
+								String CreateNewLinkText=getObject("TestCases_createNewTestCasesLink").getText();
+								
+								if(compareStrings(CreateNewLinkText,resourceFileConversion.getProperty("TM_TestCasesTab_CreateNewLink_Text")))
+								{
+									
+									APP_LOGS.debug("TEST CASES Page CREATE NEW Link : is showing properly..");
+									
+									System.out.println("TEST CASES Page CREATE NEW Link : is showing properly..");
+								
+								}
+								else
+								{
+									
+									APP_LOGS.debug("Oooopppsss...!!! TEST CASES Page CREATE NEW Link : Broken Or NOT Present");
+									comments=comments+"TEST CASES Page CREATE NEW Link : Broken Or NOT Presentt(Fail)  .";		
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "TestCases_CreateNewTextBrokenOrNotPresent ");
+								}
+								
+								
+								
+								
+								
+								// Verifying DOWNLOAD UPLOAD TEMPLATE Link is available or not
+								
+								String downloadUploadTemplateLinkText=getElement("TestCasesDownload_UploadTemplateTestCasesLink_Id").getText();
+									
+								if(compareStrings(downloadUploadTemplateLinkText,resourceFileConversion.getProperty("TM_TestCasesTab_Download/UploadTemplateLink_Text")))
+								{
+									
+									APP_LOGS.debug("TEST CASES Page Download/Upload Template Link : is showing properly..");
+								
+								}
+								else
+								{
+									
+									APP_LOGS.debug("Oooopppsss...!!! TEST CASES Page Download/Upload Template Link : Broken Or NOT Present");
+									comments=comments+" TEST CASES Page Download/Upload Template Link : Broken Or NOT Present(fail)  .";
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "TestCases_DownloadUploadTemplateTextBrokenOrNotPresent ");
+								}
+								
+								
+								
+								
+								
+								// Verifying COPY Link is available or not
+								
+								String COPY_LinkText=getElement("TestCases_CopyTestCasesLink_Id").getText();
+									
+								if(compareStrings(COPY_LinkText,resourceFileConversion.getProperty("TM_TestCasesTab_CopyLink_Text")))
+								{
+									
+									APP_LOGS.debug("TEST CASES Page COPY Link : is showing properly..");
+								
+								}
+								else
+								{
+								
+									comments=comments+"TEST CASES Page COPY Link Link : Broken Or NOT Present(fail)  .";
+									APP_LOGS.debug("Oooopppsss...!!! TEST CASES Page COPY Link Link : Broken Or NOT Present(fail)  ");
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "TestCases_COPYTextBrokenOrNotPresent ");
+								}
+								
+								
+								
+								//Verifying " No Test Case(es) Available" Text is present or not when No test Cases available on Page
+								
+								String noTestCaseAvailText =getElement("TestCases_NoTestCasesAvailable_Id").getText();
+								
+								if(compareStrings(noTestCaseAvailText,resourceFileConversion.getProperty("TM_TestCasesTab_NoTestCasesAvailMessage")))
+								{
+									
+									APP_LOGS.debug("No Test Case(es) Available Message : is showing properly..");
+									
+									
+								
+								}
+								else
+								{
+									APP_LOGS.debug("Oooopppsss...!!! No Test Case(es) Available Message :: Broken Or NOT Present");
+									
+									comments=comments+" No Test Case(es) Available Message :: Broken Or NOT Present(fail)  .";
+									
+									fail=true;
+									
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "No_Test_Case(es)_Available_MessageBrokenOrNotPresent ");
+								}
+								
+								
+								
+								
+								
+								
+				
+								//Verifying Header " Test Case Details " Text is present or not 
+								
+								
+								String headTestCaseDetailsText =getObject("TestCases_TestStepDetailsMessage").getText();
+								
+								if(compareStrings(headTestCaseDetailsText,resourceFileConversion.getProperty("TM_TestCasesTab_TestCaseDetailsText")))
+								{
+									
+									APP_LOGS.debug("Test Case Details Message : is showing properly..");
+									
+								
+								}
+								else
+								{
+									comments=comments+"  Test Case Details Message :: Broken Or NOT Present(fail)  .";
+									APP_LOGS.debug("Oooopppsss...!!! Test Case Details Message :: Broken Or NOT Present");
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(), "Test_Case_Details_MessageBrokenOrNotPresent ");
+								}
+								
+								
+								
+								if(getElement("TestCases_Tiles_Group_Id").isDisplayed())
+								{	
+									String groupTitleName=getElement("TestCases_Tiles_Group_Id").getText();
+									APP_LOGS.debug("Group Name Tile Group Name: "+ groupTitleName+ " is Present");
+									System.out.println("Group Name Tile Group Name: "+ groupTitleName+ " is Present");
+								}
+								else
+								{
+									APP_LOGS.debug("Ooopppsss...!!!Group Name tile is not present (failed)");
+									comments=comments+" Group Name tile is not present (fail)  .";
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(),"GroupNameTile_BrokenOrNotPresent");
+								}
+								
+								
+								if(getElement("TestCases_Tiles_Portfolio_Id").isDisplayed())
+								{	
+									String portfolioTitleName=getElement("TestCases_Tiles_Portfolio_Id").getText();
+									APP_LOGS.debug("Portfolio Name Tile with Portfolio Name: "+ portfolioTitleName+ " is Present");
+									
+								}
+								else
+								{
+									APP_LOGS.debug("Ooopppsss...!!!Portfolio Name tile is not present (failed)");
+									comments=comments+" Portfolio Name tile is not present (fail)  .";
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(),"PortfolioTile_BrokenOrNotPresent");
+								}
+								
+								if(getElement("TestCases_Tiles_Project_Id").isDisplayed())
+								{	
+									String projectTitleName=getElement("TestCases_Tiles_Project_Id").getText();
+									APP_LOGS.debug("Project Name Tile with Project Name: "+ projectTitleName+ " is Present");
+								}
+								else
+								{
+									APP_LOGS.debug("Ooopppsss...!!!Project Name tile is not present (failed)");
+									comments=comments+" Project Name tile is not present (fail)  .";
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(),"ProjectNameTile_BrokenOrNotPresent");
+								}
+								
+								
+								if(getElement("TestCases_Tiles_Version_Id").isDisplayed())
+								{	
+									String versionTitleName=getElement("TestCases_Tiles_Version_Id").getText();
+									APP_LOGS.debug("Version Name Tile with Version Name: "+ versionTitleName+ " is Present");
+								}
+								else
+								{
+									APP_LOGS.debug("Ooopppsss...!!!Version Name: tile is not present (failed)");
+									comments=comments+" Version Name: tile is not present  (fail)  .";
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(),"VersionNameTile_BrokenOrNotPresent");
+								}
+								
+								if(getElement("TestCases_Tiles_TestPass_Id").isDisplayed())
+								{	
+									String testPassTitleName=getElement("TestCases_Tiles_TestPass_Id").getText();
+									APP_LOGS.debug("TestPass Name Tile with Tess Pass Title : "+ testPassTitleName+ " is Present");
+								}
+								else
+								{
+									APP_LOGS.debug("Ooopppsss...!!!Test Pass Name tile is not present (failed)");
+									comments=comments+" Test Pass Name tile is not present (fail)  .";
+									fail=true;
+									TestUtil.takeScreenShot(this.getClass().getSimpleName(),"TestPassNameTile_BrokenOrNotPresent");
+								}
+								
+								
+							APP_LOGS.debug("Contents of the Test Cases page Verified Successfully");
+							comments=comments+"Contents of the Test Cases page Verified Successfully (Pass)    .";
+							
+							APP_LOGS.debug("Closing Browser... ");
+							closeBrowser();
+						
+						}
+						else 
+						{
+							fail= true;
+							APP_LOGS.debug("Test Manager Login Not Successful");
+						}	
+			
+					}	
+					else 
+					{
+							fail= true;
+							APP_LOGS.debug("Version Lead Login Not Successful");
+						
+					}
+							
+			
+					}	
+					catch (Throwable e) 
+					{
+						e.printStackTrace();
+						assertTrue(false);
+						fail = true;
+						TestUtil.takeScreenShot(this.getClass().getSimpleName(), "Skip or some other exception");
+						comments+="Skip Exception or other exception occured" ;
+					}
+					
+				
+				closeBrowser();
+			}
+				
+			else 
+			{
+				APP_LOGS.debug("Login Not Successful");
+						
+						
+			}	
+				
+			
+		}	
+					
+	
+	
+	
+				@AfterMethod
+				public void reportDataSetResult()
+				{
+					if(skip)
+						TestUtil.reportDataSetResult(TM_testCasesSuiteXls, this.getClass().getSimpleName(), count+2, "SKIP");
+					
+					else if(!isLoginSuccess){
+						isTestPass=false;
+						TestUtil.reportDataSetResult(TM_testCasesSuiteXls, this.getClass().getSimpleName(), count+2, "Login UnSuccessfull");
+					}
+					else if(fail){
+						isTestPass=false;
+						TestUtil.reportDataSetResult(TM_testCasesSuiteXls, this.getClass().getSimpleName(), count+2, "FAIL");
+						TestUtil.printComments(TM_testCasesSuiteXls, this.getClass().getSimpleName(), count+2, comments);
+					}
+					else
+					{
+						TestUtil.reportDataSetResult(TM_testCasesSuiteXls, this.getClass().getSimpleName(), count+2, "PASS");
+					TestUtil.printComments(TM_testCasesSuiteXls, this.getClass().getSimpleName(), count+2, comments);
+					}
+					skip=false;
+					fail=false;
+					
+			
+				}
+				
+				
+				@AfterTest
+				public void reportTestResult(){
+					if(isTestPass)
+						TestUtil.reportDataSetResult(TM_testCasesSuiteXls, "Test Cases", TestUtil.getRowNum(TM_testCasesSuiteXls,this.getClass().getSimpleName()), "PASS");
+					else
+						TestUtil.reportDataSetResult(TM_testCasesSuiteXls, "Test Cases", TestUtil.getRowNum(TM_testCasesSuiteXls,this.getClass().getSimpleName()), "FAIL");
+				
+				}
+				
+				
+				
+				@DataProvider
+				public Object[][] getTestData(){
+					return TestUtil.getData(TM_testCasesSuiteXls, this.getClass().getSimpleName()) ;
+				}
+	
+				
+				
+}

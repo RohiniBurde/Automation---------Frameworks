@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="39270" started-at="2015-03-04T13:06:57Z" finished-at="2015-03-04T13:07:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="39270" started-at="2015-03-04T13:06:57Z" finished-at="2015-03-04T13:07:36Z">
+      <class name="com.uat.suite.sd_detailedView.VerifyDVTestPassSection">
+        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:com.uat.suite.sd_detailedView.VerifyDVTestPassSection@6bdf28bb]" name="checkSuiteSkip" is-config="true" duration-ms="4501" started-at="2015-03-04T18:36:52Z" finished-at="2015-03-04T18:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSuiteSkip -->
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:com.uat.suite.sd_detailedView.VerifyDVTestPassSection@6bdf28bb]" name="checkTestSkip" is-config="true" duration-ms="17" started-at="2015-03-04T18:36:57Z" finished-at="2015-03-04T18:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestSkip -->
+        <test-method status="PASS" signature="testVerifyDVTestPassSection(java.lang.String)[pri:0, instance:com.uat.suite.sd_detailedView.VerifyDVTestPassSection@6bdf28bb]" name="testVerifyDVTestPassSection" duration-ms="38117" started-at="2015-03-04T18:36:57Z" data-provider="getTestData" finished-at="2015-03-04T18:37:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Stakeholder+Version Lead]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyDVTestPassSection -->
+        <test-method status="PASS" signature="reportDataSetResult()[pri:0, instance:com.uat.suite.sd_detailedView.VerifyDVTestPassSection@6bdf28bb]" name="reportDataSetResult" is-config="true" duration-ms="768" started-at="2015-03-04T18:37:35Z" finished-at="2015-03-04T18:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportDataSetResult -->
+        <test-method status="PASS" signature="reportTestResult()[pri:0, instance:com.uat.suite.sd_detailedView.VerifyDVTestPassSection@6bdf28bb]" name="reportTestResult" is-config="true" duration-ms="336" started-at="2015-03-04T18:37:36Z" finished-at="2015-03-04T18:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTestResult -->
+      </class> <!-- com.uat.suite.sd_detailedView.VerifyDVTestPassSection -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

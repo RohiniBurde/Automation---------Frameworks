@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="a-0d60a2f203f14" name="com.qtpselenium.suite.shop.RandomSelection" tests="1" failures="0" timestamp="20 Dec 2011 03:37:06 GMT" time="85.453" errors="0">
+  <testcase name="testSelection" time="85.219" classname="com.qtpselenium.suite.shop.RandomSelection"/>
+</testsuite>

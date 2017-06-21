@@ -1,0 +1,12 @@
+#Added by Aishwarya on 3 dec 2014
+Reports_defaultProjectDDText=Select Project
+Reports_defaultVersionDDText=Select Version
+Reports_defaultTestPassDDText=Select Test Pass
+Reports_defaultTesterDDText=Select Tester
+Reports_defaultTesterRoleDDText=Select Role
+Reports_defaultStatusDDText=All
+ReportsPageHeadingText=Reports
+Reports_firstTPOption=All Test Passes
+Reports_firsdTesterOption=All Tester
+Reports_firsdTesterRoleOption=All Role
+Reports_firsdStatusOption=All

@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Reports Suite">
+
+ 
+<test name="VerifyLandingOnReportsPage">
+    <classes>
+        <class name="com.uat.suite.reports.VerifyLandingOnReportsPage" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyReportsPageDDContents">
+    <classes>
+        <class name="com.uat.suite.reports.VerifyReportsPageDDContents" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyGoButtonFunctionality">
+    <classes>
+        <class name="com.uat.suite.reports.VerifyGoButtonFunctionality" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyExportButtonFunctionality">
+    <classes>
+        <class name="com.uat.suite.reports.VerifyExportButtonFunctionality" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyTooltipMessage">
+    <classes>
+        <class name="com.uat.suite.reports.VerifyTooltipMessage" ></class>  
+    </classes>
+</test>
+
+</suite>

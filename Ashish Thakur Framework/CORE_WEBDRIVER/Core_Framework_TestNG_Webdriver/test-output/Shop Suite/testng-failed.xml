@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Shop Suite]">
+  <listeners>
+    <listener class-name="com.qtpselenium.listener.TestsListenerAdapter"/>
+  </listeners>
+  <test name="AddProduct Test(failed)" preserve-order="false">
+    <classes>
+      <class name="com.qtpselenium.suite.shop.AddProductTest">
+        <methods>
+          <include name="addProductToBasket"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class>
+      <class name="com.qtpselenium.suite.shop.CheckProductDisplay">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class>
+      <class name="com.qtpselenium.suite.shop.RandomSelection">
+        <methods>
+          <include name="reportDataSetResult"/>
+          <include name="checkSuiteSkip"/>
+          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="CheckProduct Display(failed)" preserve-order="false">
+    <classes>
+      <class name="com.qtpselenium.suite.shop.AddProductTest">
+        <methods>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class>
+      <class name="com.qtpselenium.suite.shop.CheckProductDisplay">
+        <methods>
+          <include name="checkTestSkip"/>
+          <include name="testcaseA1"/>
+        </methods>
+      </class>
+      <class name="com.qtpselenium.suite.shop.RandomSelection">
+        <methods>
+          <include name="reportDataSetResult"/>
+          <include name="checkSuiteSkip"/>
+          <include name="checkTestSkip"/>
+          <include name="reportTestResult"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

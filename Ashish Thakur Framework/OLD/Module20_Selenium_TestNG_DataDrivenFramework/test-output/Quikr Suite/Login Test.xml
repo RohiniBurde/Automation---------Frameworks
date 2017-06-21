@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="ashish-460a2560" name="tests.LoginTest" tests="2" failures="1" timestamp="1 Jul 2011 10:12:22 GMT" time="20.907" errors="0">
+  <testcase name="testLogin" time="13.375" classname="tests.LoginTest">
+    <failure type="java.lang.Throwable" message="not able to login with valid credentials">
+      <![CDATA[java.lang.Throwable: not able to login with valid credentials
+	at tests.LoginTest.testLogin(LoginTest.java:29)
+... Removed 24 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testLogin" time="7.532" classname="tests.LoginTest"/>
+</testsuite>

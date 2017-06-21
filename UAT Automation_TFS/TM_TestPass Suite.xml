@@ -1,0 +1,63 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TM_TestPass Suite">
+
+
+
+<test name="VerifyLandingOnTstPassPage">
+    <classes>
+        <class name="com.uat.suite.tm_testpass.VerifyLandingOnTstPassPage" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyLandingOfTesterOnTMpage">
+    <classes>
+        <class name="com.uat.suite.tm_testpass.VerifyLandingOfTesterOnTMpage" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyTPName">
+    <classes>
+        <class name="com.uat.suite.tm_testpass.VerifyTPName" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyTPNameLength">
+    <classes>
+        <class name="com.uat.suite.tm_testpass.VerifyTPNameLength" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyMandatoryFieldsValidation">
+    <classes>
+        <class name="com.uat.suite.tm_testpass.VerifyMandatoryFieldsValidation" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyEditFunctionForUsers">
+    <classes>
+        <class name="com.uat.suite.tm_testpass.VerifyEditFunctionForUsers" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyTestMangrSecurity">
+    <classes>
+        <class name="com.uat.suite.tm_testpass.VerifyTestMangrSecurity" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifySendEmailButtonFunctions">
+    <classes>
+        <class name="com.uat.suite.tm_testpass.VerifySendEmailButtonFunctions" ></class>  
+    </classes>
+</test>
+
+
+</suite>
+

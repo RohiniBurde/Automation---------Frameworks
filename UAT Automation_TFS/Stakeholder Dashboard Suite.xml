@@ -1,0 +1,87 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Stakeholder Dashboard Suite">
+<listeners>
+     
+</listeners>
+
+<test name="VerifyLandingOnSDPage">
+    <classes>
+        <class name="com.uat.suite.stakeholder_dashboard.VerifyLandingOnSDPage" ></class>  
+    </classes>
+</test>
+
+
+ <test name="VerifyCVTabContent">
+    <classes>
+        <class name="com.uat.suite.stakeholder_dashboard.VerifyCVTabContent" ></class>  
+    </classes>
+</test>
+
+
+  <test name="VerifyCVProjestStatusDropdown">
+    <classes>
+        <class name="com.uat.suite.stakeholder_dashboard.VerifyCVProjestStatusDropdown" ></class>  
+    </classes>
+</test>
+
+
+
+  <test name="VerifyCVSelectDateDropdown">
+    <classes>
+        <class name="com.uat.suite.stakeholder_dashboard.VerifyCVSelectDateDropdown" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyCVFiscalYearDropdown">
+    <classes>
+        <class name="com.uat.suite.stakeholder_dashboard.VerifyCVFiscalYearDropdown" ></class>  
+    </classes>
+</test> 
+
+
+
+<test name="VerifyCVProjectSection">
+    <classes>
+        <class name="com.uat.suite.stakeholder_dashboard.VerifyCVProjectSection" ></class>  
+    </classes>
+</test>
+
+
+
+<test name="VerifyCVStatusSection">
+    <classes>
+        <class name="com.uat.suite.stakeholder_dashboard.VerifyCVStatusSection" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyCVTabWithProjectOnly">
+    <classes>
+        <class name="com.uat.suite.stakeholder_dashboard.VerifyCVTabWithProjectOnly" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyCVTestStepFilter">
+    <classes>
+        <class name="com.uat.suite.stakeholder_dashboard.VerifyCVTestStepFilter" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyCVPagination">
+    <classes>
+        <class name="com.uat.suite.stakeholder_dashboard.VerifyCVPagination" ></class>  
+    </classes>
+</test>
+
+
+<!-- <test name="VerifyCVExportToPPT">
+    <classes>
+        <class name="com.uat.suite.stakeholder_dashboard.VerifyCVExportToPPT" ></class>  
+    </classes>
+</test> -->
+
+
+</suite>

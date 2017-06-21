@@ -1,0 +1,16 @@
+
+#Shrutika 10-12
+Dashboard_myActivityAndTesingStatusDiv =//div[@id='divTester']/div[1]
+Dashboard_tesingStatusDiv =//div[@id='divTester']/div[2]
+Dashboard_projectStatusAndTestPassDiv = //div[@id='divManager']/div[1]
+DashboardProjectStatus_portfolio_Id=trPortfolio
+DashboardProjectStatus_version_Id=trVersion
+DashboardProjectStatus_project=//tr[@id='trPortfolio']/following-sibling::tr[1]
+Dashboard_testPassStatusHeading = //div[@id='divManager']/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/h3[1]
+Dashboard_projectStatusDiv = //div[@id='divManager']/div[1]/table[1]/tbody[1]/tr[1]/td[1]
+Dashboard_testPassStatusDiv = //div[@id='divManager']/div[1]/table[1]/tbody[1]/tr[1]/td[2]
+Dashboard_testPassStatus_testPassDropDown= //div[@id='divManager']/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/table[1]/tbody[1]/tr[1]
+Dashboard_myActivityDiv_Id=celebsMA
+Dashboard_tesingStatusDropDown1=//div[@id='divTester']/div[2]/table[1]/tbody[1]/tr[
+Dashboard_tesingStatusDropDown2=]
+Dashboard_projectAndTestPassSummaryDiv =//div[@id='divTester']/following-sibling::div[1]

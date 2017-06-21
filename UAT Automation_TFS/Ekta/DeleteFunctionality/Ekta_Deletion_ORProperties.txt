@@ -1,0 +1,32 @@
+#Deleting Test Cases
+Deletion_NoTestCasePresentDiv_Id = noTestCaseDiv
+Deletion_TestCasesBulkDeleteBtn_Id = btnDelete
+Deletion_TestCasesBulkDeleteConfirmationMessage = //span[text()='Delete']
+Deletion_TestCasesBulkDeletePerformedOkMessage=//div[@id='divAlert']/following-sibling::div[1]/div[1]/button
+
+
+
+#Deletion Test Passes
+Deletion_NoTestPassAvailable_Id = noP
+Deletion_TestPassDeletion_XPath1 = //tbody[@id='showTestPass']/tr[
+Deletion_TestPassDeletion_XPath2 = ]/td[6]/a[2]
+Deletion_TestPassDeleteConfirmationMessage = //div[@id='divConfirm']/following-sibling::div[1]/div[1]/button[1]
+Deletion_TestPassDeletePerformedOkMessage=//div[@id='divAlert']/following-sibling::div[9]/div[1]/button
+
+
+#Deletion Projects
+Deletion_Project_TotalRecords = labelCount
+Deletion_Project_FirstPagination_SelectFirstasDefault = //div[@id='Pagination1']/div[1]/a[2]
+Deletion_Project_DeleteIcon = //tr[@class='rowSelected']/td[7]/a[2]/img
+Deletion_ProjectDeleteConfirmationMessage = //div[@id='divConfirm']/following-sibling::div[1]/div[1]/button[1]
+Deletion_Project_CreateNew = //div[@id='pageTab']/h2[2]
+Deletion_AvailableProjectNames_Xpath1 = //tbody[@id='showproject']/tr[
+Deletion_AvailableProjectNames_Xpath2 = ]/td[2]/span
+Deletion_GroupNamesinDropDown_Id = group
+Deletion_PortfolioNamesinDropDown_Id = process
+Deletion_PortfolioNamesinDropDown_Xpath1 = //select[@id='process']/option[
+Deletion_PortfolioNamesinDropDown_Xpath2 = ]
+Deletion_PortfolioName_DeleteIcon = //a[@id='deletePortfolio']/img
+Deletion_GroupPortfolioDeleteConfirmationMessage = //div[@id='alertGrpPort']/following-sibling::div[1]/div[1]/button[1]
+Deletion_GroupPortfolioProjectDeletePerformedOkMessage = //div[@id='divAlert']/following-sibling::div[9]/div[1]/button
+Deletion_GroupName_DeleteIcon = //a[@id='deleteGroup']/img

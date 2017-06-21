@@ -1,0 +1,88 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TM_TestCases Suite">
+
+
+
+<test name="VerifyLandingOnTestCasesPage">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.VerifyLandingOnTestCasesPage" ></class>  
+    </classes>
+</test>
+
+<test name="TCs_VerifyContentsOfTCspage">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.TCs_VerifyContentsOfTCspage" ></class>  
+    </classes>
+</test>
+
+
+<test name="TCs_VerifyBulkDeleteOperation">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.TCs_VerifyBulkDeleteOperation" ></class>  
+    </classes>
+</test>
+
+
+<test name="TCs_CreateNewTestcase">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.TCs_CreateNewTestcase" ></class>  
+    </classes>
+</test>
+
+
+<test name="TCs_EditTestCase">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.TCs_EditTestCase" ></class>  
+    </classes>
+</test>
+
+<test name="TCs_DeleteTestCase">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.TCs_DeleteTestCase" ></class>  
+    </classes>
+</test>
+
+<test name="TCs_VerifyDownUploadTempPage">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.TCs_VerifyDownUploadTempPage" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyGuideLinetoUpDownTestCase">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.VerifyGuideLinetoUpDownTestCase" ></class>  
+    </classes>
+</test>
+
+<test name="TCs_CopyToTPNotHavingTester">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.TCs_CopyToTPNotHavingTester" ></class>  
+    </classes>
+</test>
+
+<test name="TCs_CopyTCToOtherTP">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.TCs_CopyTCToOtherTP" ></class>  
+    </classes>
+</test>
+
+
+<test name="CopyTCAlongWdTSToOthrTPDiffRole">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.CopyTCAlongWdTSToOthrTPDiffRole"></class>  
+    </classes>
+</test>
+
+<test name="CopiedTestStepDeletePossible">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.CopiedTestStepDeletePossible" ></class>  
+    </classes>
+</test>
+
+<test name="CopiedTestStepEditPossible">
+    <classes>
+        <class name="com.uat.suite.tm_testcases.CopiedTestStepEditPossible" ></class>  
+    </classes>
+</test>
+
+</suite>

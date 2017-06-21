@@ -1,0 +1,9 @@
+public static Xls_Reader TM_testerSuiteXls=null;
+
+.
+.
+.
+.
+.
+
+TM_testerSuiteXls = new Xls_Reader(System.getProperty("user.dir")+"\\src\\com\\uat\\xls\\TM_Testers Suite.xlsx");

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="ashish-460a2560" name="tests.RegisterTest" tests="2" failures="0" timestamp="1 Jul 2011 10:12:01 GMT" time="0.015" errors="0">
+  <testcase name="@BeforeTest isSkipped" time="0.0" classname="tests.RegisterTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testRegistration" time="0.0" classname="tests.RegisterTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testRegistration" time="0.0" classname="tests.RegisterTest">
+    <skipped/>
+  </testcase>
+</testsuite>

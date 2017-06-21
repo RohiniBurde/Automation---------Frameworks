@@ -1,0 +1,69 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SD_DetailedView Suite">
+
+	<test name="VerifyDVTabContent">
+	    <classes>
+	        <class name="com.uat.suite.sd_detailedView.VerifyDVTabContent" ></class>  
+	    </classes>
+	</test>
+	
+	<test name="VerifyDVProjectStatusDropdown">
+	    <classes>
+	        <class name="com.uat.suite.sd_detailedView.VerifyDVProjectStatusDropdown" ></class>  
+	    </classes>
+	</test>
+	
+	<test name="VerifyDVSelectDateDropdown">
+	    <classes>
+	        <class name="com.uat.suite.sd_detailedView.VerifyDVSelectDateDropdown" ></class>  
+	    </classes>
+	</test>
+	
+	<test name="VerifyDVFiscalYearDropdown">
+	    <classes>
+	        <class name="com.uat.suite.sd_detailedView.VerifyDVFiscalYearDropdown" ></class>  
+	    </classes>
+	</test>
+	
+	<test name="VerifyDVProjectSection">
+	    <classes>
+	        <class name="com.uat.suite.sd_detailedView.VerifyDVProjectSection" ></class>  
+	    </classes>
+	</test>
+	
+	<test name="VerifyDVTestPassSection">
+	    <classes>
+	        <class name="com.uat.suite.sd_detailedView.VerifyDVTestPassSection" ></class>  
+	    </classes>
+	</test>
+	
+	<test name="VerifyDVTestersSection">
+	    <classes>
+	        <class name="com.uat.suite.sd_detailedView.VerifyDVTestersSection" ></class>  
+	    </classes>
+	</test>
+	
+	<test name="VerifyDVTestStepFilters">
+	    <classes>
+	        <class name="com.uat.suite.sd_detailedView.VerifyDVTestStepFilters" ></class>  
+	    </classes>
+	</test>
+	
+	<test name="VerifySDWithOnlyProjectCreated">
+	    <classes>
+	        <class name="com.uat.suite.sd_detailedView.VerifySDWithOnlyProjectCreated" ></class>  
+	    </classes>
+	</test>
+
+	<test name="VerifySDWithOnlyProject">
+	    <classes>
+	        <class name="com.uat.suite.sd_detailedView.VerifySDWithOnlyProject" ></class>  
+	    </classes>
+	</test>
+
+	<test name="VerifyDVPagination">
+	    <classes>
+	        <class name="com.uat.suite.sd_detailedView.VerifyDVPagination" ></class>  
+	    </classes>
+	</test>
+</suite>

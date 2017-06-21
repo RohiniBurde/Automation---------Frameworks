@@ -1,0 +1,3 @@
+public static Xls_Reader TriageSuiteXls=null;
+
+TriageSuiteXls= new Xls_Reader(System.getProperty("user.dir")+"\\src\\com\\uat\\xls\\Triage Suite.xlsx");

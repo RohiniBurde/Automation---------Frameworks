@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TM_TestPass Suite">
+
+
+
+<test name="VerifyLandingOnTstPassPage">
+    <classes>
+        <class name="com.uat.suite.tm_testpass.VerifyLandingOnTstPassPage" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyLandingOfTesterOnTMpage">
+    <classes>
+        <class name="com.uat.suite.tm_testpass.VerifyLandingOfTesterOnTMpage" ></class>  
+    </classes>
+</test>
+
+</suite>
+

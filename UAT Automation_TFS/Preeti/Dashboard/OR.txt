@@ -1,0 +1,156 @@
+#Dashboard
+Dashboard_projectTestPassSummary_ID=Pagination
+DashboardTab_Class = selHeading
+Dashboard_pageHeaderText_Id=pgHeading
+StakeholderDashboardTab_Class = selHeading
+StakeholderDashboard_consolidatedViewTab = //div[@id='tabs']/ul/li[2]
+Dashboard_pageHeaderText = //span[@id='pgHeading']
+DashboardMyActivity_noActivityAssignedText = //div[@id='spanMA']/h3
+DashboardMyActivity_table = //table[@id='celebsMA']/tbody
+DashboardMyActivity_Pagination_Id =MyActPagination
+DashboardMyActivity_projectNameColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_projectNameColumn2=]/td[1]
+DashboardMyActivity_versionColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_versionColumn2=]/td[2]
+DashboardMyActivity_testPassNameColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_testPassNameColumn2=]/td[3]
+DashboardMyActivity_roleNameColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_roleNameColumn2=]/td[4]/span
+DashboardMyActivity_daysLeftColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_daysLeftColumn2=]/td[5]
+DashboardMyActivity_notCompletedCountColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_notCompletedCountColumn2=]/td[6]
+DashboardMyActivity_passCountColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_passCountColumn2=]/td[7]
+DashboardMyActivity_failCountColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_failCountColumn2=]/td[8]
+DashboardMyActivity_actionColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_actionColumn2=]/td[9]/a
+DashboardMyActivity_NextLink=//div[@id='MyActPagination']/div/a[text()='Next']
+DashboardMyActivity_daysLeftHoverColumn = //table[@id='celebsMA']/thead/tr[1]/td[5]
+DashboardMyActivity_notCompletedHoverColumn = //table[@id='celebsMA']/thead/tr[1]/td[6]
+DashboardMyActivity_offlineTestingOnHover_Id = onhovertextOfflinetesting
+DashboardMyActivity_offlineTestingHoverColumn_Id = offLinetest
+DashboardMyActivity_detailedAnalysisBtn_Id = divDetailAnalysisLink
+DashboardMyActivity_numberOfTesterParticipatedBtn_Id = TesterCount
+DashboardMyActivity_myActivityHeading=//div[@id='divTester']/div[1]/h3[1]
+DashboardMyActivity_offlineTestingDownloadTemplateIconColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_offlineTestingDownloadTemplateIconColumn2=]/td[10]/img[1]
+DashboardMyActivity_offlineTestingUploadTemplateIconColumn1=//tbody[@id='myact']/tr[
+DashboardMyActivity_offlineTestingUploadTemplateIconColumn2=]/td[10]/img[2]
+DashboardMyActivity_offlineTestingGuidelineIcon = //td[@id='offLinetest']/img
+DashboardMyActivity_offlineTestingImportTestStepGuidelineAlert_Id = divAlert
+DashboardMyActivity_offlineTestingImportTestStepAlertOkButton = //div[@id='divAlert']/following-sibling::div[9]/div[1]/button[1]/span
+DashboardMyActivity_offlineTestingImportTestStepGuidelineOkButton = //div[@id='divAlert']/following-sibling::div[1]/div[1]/button[1]/span
+DashboardMyActivities_actionColumnLinksXpath1 = id("myact")/tr[
+DashboardMyActivities_actionColumnLinksXpath2 = ]/td[9]/a
+
+#TestingPage_passRadioButton_Id = radPass
+#TestingPage_failRadioButton_Id = radFail
+TestingPage_pendingRadioButton_Id = radPending
+TestingPage_actualResult_TextBox_Id = actualResultWithImage
+TestingPage_saveButton_Id = btnSave
+TestingPage_showNextLink_Id = next
+TestingPage_feebackRatingPopup_Id = FeedbackPopUpRTE
+TestingPage_feebackRatingPopup_Text = //span[@id='ui-dialog-title-FeedbackPopUpRTE']
+TestingPage_rating_verySatisfiedRadioBtn = //div[@id='rating']/table/tbody/tr[1]/td[1]/input
+TestingPage_rating_veryDissatisfiedRadioBtn = //div[@id='rating']/table/tbody/tr[1]/td[2]/input
+TestingPage_rating_somewhatSatisfiedRadioBtn = //div[@id='rating']/table/tbody/tr[2]/td[1]/input
+TestingPage_rating_somewhatDissatisfiedRadioBtn = //div[@id='rating']/table/tbody/tr[2]/td[2]/input
+TestingPage_feedback_IframeName = rte3
+TestingPage_feedbackRating_SaveButton = //span[text()='Save']
+TestingPage_returnToHomeButton = //span[text()='Return to Home']
+DashboardTestingStatus_testingStatusHeading=//div[@id='divTester']/div[2]/h3[1]
+DashboardTestingStatus_versionDD=versionDD
+DashboardTestingStatus_noTestPassAvailable_Id=noTestPases
+DashboardTestingStatus_noTestCaseAvailable_Id=noTestCases
+
+Dashboard_projectStatusHeading = //div[@id='divManager']/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/h3[1]
+Dashboard_portfolioDD_ID =ddPortfolio
+Dashboard_projectDD_ID =dd
+Dashboard_versionDD_ID =ddVersion
+Dashboard_testPassDD_ID =testPassDD
+Dashboard_nuberOfTesterParticipatedButton_ID = TesterCount
+Dashboard_detailedAnalysis=//div[@id='divDetailAnalysisLink']/b[1]/a[1]
+Dashboard_triageButton=//div[@id='divDetailAnalysisLink']/b[2]/a[1]   
+
+DashboardUserName_text=//div[@id='userW']/span[2]/a
+Dashboard_detailedAnalysis_ID =divDetailAnalysisLink
+DashboardProjectTestPassSummary_project1 =//tbody[@id='Searchresult']/tr[
+DashboardProjectTestPassSummary_project2 =]/td[3]/a[1]
+DashboardProjectTestPassSummary_testPass1 =//tbody[@id='Searchresult']/tr[
+DashboardProjectTestPassSummary_testPass2 =]/td[5]/a[1]
+ProjectEdit_pageHeading =//div[@id='RightPanel']/div[1]/div[@class='pgHead']
+Triage_projectDropDown_Id=projSelect
+Triage_versionDropDown_Id=versionSelect
+Triage_testPassDropDown_Id=scenSelect
+Triage_testerDropDown_Id=tester
+Triage_testerRoleDropDown_Id=roleList
+TestPass_pageHeading=//div[@id='RightPanel']/div[@class='pgHead']
+ProjectEdit_pageHeading_Class=pgHead
+TestPassEdit_testManagerPeoplePicker_Id =content
+
+DashboardProject_pieChart=//div[@id='pieChartProject']/img
+DashboardTestPass_pieChart=//div[@id='pieChart']/img
+DetailedAnalysis_roleDropDown_Id =roleDD
+DetailedAnalysis_projectDropDown_Id = dd
+DetailedAnalysis_versionDropDown_Id =versionDD
+#DetailedAnalysis_testPassDropDown_Id = testPassDD
+DetailedAnalysis_testerDropDown_Id = testerDD
+DetailedAnalysis_testPassNameDisplayedAboveGauge_Id = testPassDet
+DetailedAnalysis_testStepPassedText_Id = divPassCount
+DetailedAnalysis_testStepFailedText_Id = divFailCount
+DetailedAnalysis_testStepNCText_Id = divNCCount
+DetailedAnalysis_testCasePassedText_Id = divPassTCCount
+DetailedAnalysis_testCaseFailedText_Id = divFailTCCount
+DetailedAnalysis_testCaseNCText_Id = divNCTCCount
+#DashboardTestingStatus_detailedAnalysisButton_Id = divDetailAnalysisLink
+DashboardTestingStatus_pieChartImage = //div[@id = 'pieChart']/img
+#added by preeti on 30Nov 2014
+DashboardProjectAndTestPassSummary_Text=//div[@id='divTester']/following-sibling::div[1]/h3
+DashboardProjectTestPassSummary_Pagination_Id =Pagination
+DashboardProjectTestPassSummary_Table_Id=celebs
+DashboardProjectTestPassSummary_table=//table[@id='celebs']/tbody  
+Dashboard_projectTestPassSummary_column1 =//div[@id='Searchresult']/tr[
+Dashboard_projectTestPassSummary_column2= ]/td[
+Dashboard_projectTestPassSummary_column3=]
+DashboardProjectTestPassSummary_previousLinkDisabled = //div[@id='Pagination']/div/span[text()='Prev']
+DashboardProjectTestPassSummary_nextLinkDisabled = //div[@id='Pagination']/div/span[text()='Next']
+DashboardProjectTestPassSummary_previousLink = //div[@id='Pagination']/div/a[text()='Prev']
+DashboardProjectTestPassSummary_nextLink = //div[@id='Pagination']/div/a[text()='Next']
+DashboardProjectTestPassSummary_project1 =//tbody[@id='Searchresult']/tr[
+DashboardProjectTestPassSummary_project2 =]/td[2]/a[1]
+DashboardProjectTestPassSummary_project1Click =//tbody[@id='Searchresult']/tr[
+DashboardProjectTestPassSummary_project2Click =]/td[3]/a[1]
+DashboardProjectTestPassSummary_testPass1 =//tbody[@id='Searchresult']/tr[
+DashboardProjectTestPassSummary_testPass2 =]/td[4]/a[1]
+DashboardProjectTestPassSummary_testPass1Click =//tbody[@id='Searchresult']/tr[
+DashboardProjectTestPassSummary_testPass2Click =]/td[5]/a[1]
+DashboardProjectTestPassSummary_NoProjectsLabel = //div[@id='myTestPassSummary']/h3
+DashboardProjectTestPassSummary_NoTestPassLabel = //div[@id='myTestPassSummary']/h3
+ProjectViewAll_projectTable_Id= table1
+#Shrutika 10-12
+DashboardMyActivityDiv =//div[@id='divTester']/div[1]
+DashboardMyActivity_Label =//div[@id='divTester']/div[1]/h3
+DashboardTesingStatusDiv =//div[@id='divTester']/div[2]
+DashboardTestingStatus_Label =//div[@id='divTester']/div[2]/h3
+Dashboard_projectStatusAndTestPassDiv = //div[@id='divManager']/div[1]
+DashboardProjectStatus_portfolio_Id=trPortfolio
+DashboardProjectStatus_version_Id=trVersion
+DashboardProjectStatus_project=//tr[@id='trPortfolio']/following-sibling::tr[1]
+Dashboard_testPassStatusHeading = //div[@id='divManager']/div[1]/table/tbody/tr[1]/td[2]/div[1]/h3[1]
+Dashboard_projectStatusDiv = //div[@id='divManager']/div[1]/table[1]/tbody[1]/tr[1]/td[1]
+Dashboard_testPassStatusDiv = //div[@id='divManager']/div[1]/table[1]/tbody[1]/tr[1]/td[2]
+Dashboard_testPassStatus_testPassDropDown= //div[@id='divManager']/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/table[1]/tbody[1]/tr[1]
+Dashboard_myActivityDiv_Id=celebsMA
+Dashboard_tesingStatusDropDown1=//div[@id='divTester']/div[2]/table[1]/tbody[1]/tr[
+Dashboard_tesingStatusDropDown2=]
+#Shrutika 11-12
+Dashboard_projectTestPassSummaryColumnHead1=//div[@id='myTestPassSummary']/table[1]/thead[1]/tr[1]/td[
+Dashboard_projectTestPassSummaryColumnHead2=]
+Dashboard_projectTestPassSummary_group_Id=Searchresult
+#by preeti on 16Dec
+DashboardProjectTestPassSummaryDiv=//div[@id='divTester']/following-sibling::div[1]
+DashboardProjectTestPassSummary_Label=//div[@id='divTester']/following-sibling::div[1]/h3
+DashboardMyActivityAndTestingStatus_Div_Id=divTester
+TestPassViewAll_testPassTable_Id=testPassGrid

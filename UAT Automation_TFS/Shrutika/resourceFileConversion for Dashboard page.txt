@@ -1,0 +1,11 @@
+#Dashboard
+Dashboard_pageHeadingText=Dashboard
+Dashboard_projectStatusText=Project Status
+Dashboard_testPassStatusText=Test Pass Status
+Dashboard_expProjectAndTestPassSummaryText=Project and Test Pass Summary
+Dashboard_projectStatus=Active
+Dashboard_myActivityHead=My Activities
+Dashboard_testingStatusHead=Testing Status
+ProjectEdit_pgHead=Project Details
+TestPass_pgHead=Test Pass Details
+Dashboard_noTestStepAvailable=No Test Steps Available

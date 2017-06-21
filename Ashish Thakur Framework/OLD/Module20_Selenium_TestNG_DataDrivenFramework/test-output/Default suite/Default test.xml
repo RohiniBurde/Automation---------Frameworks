@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="ashish-460a2560" name="tests.RegisterTest" tests="2" failures="0" timestamp="30 Jun 2011 11:15:01 GMT" time="13.172" errors="0">
+  <testcase name="testRegistration" time="9.485" classname="tests.RegisterTest"/>
+  <testcase name="testRegistration" time="3.657" classname="tests.RegisterTest"/>
+</testsuite>

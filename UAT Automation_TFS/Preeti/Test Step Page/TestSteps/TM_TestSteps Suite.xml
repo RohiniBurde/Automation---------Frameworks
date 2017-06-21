@@ -1,0 +1,57 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TM_TestSteps Suite">
+
+<test name="VerifyLandingOnTestStepsPage">
+    <classes>
+        <class name="com.uat.suite.tm_teststep.VerifyLandingOnTestStepsPage" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyContentsOfTestStepsPage">
+    <classes>
+        <class name="com.uat.suite.tm_teststep.VerifyContentsOfTestStepsPage" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyCreateNewTestSteps">
+    <classes>
+        <class name="com.uat.suite.tm_teststep.VerifyCreateNewTestSteps" ></class>  
+    </classes>
+</test>
+
+<test name="VerifyDeleteTestStep">
+    <classes>
+        <class name="com.uat.suite.tm_teststep.VerifyDeleteTestStep" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyExportTestStepsOption">
+    <classes>
+        <class name="com.uat.suite.tm_teststep.VerifyExportTestStepsOption" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyImportTestStepGuidelines">
+    <classes>
+        <class name="com.uat.suite.tm_teststep.VerifyImportTestStepGuidelines" ></class>  
+    </classes>
+</test>
+
+
+<test name="TestSteps_VerifyImportFeature">
+    <classes>
+        <class name="com.uat.suite.tm_teststep.TestSteps_VerifyImportFeature" ></class>  
+    </classes>
+</test>
+
+
+<test name="VerifyTestStepBulkDelete">
+    <classes>
+        <class name="com.uat.suite.tm_teststep.VerifyTestStepBulkDelete" ></class>  
+    </classes>
+</test>
+
+
+</suite>
